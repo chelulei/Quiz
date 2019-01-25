@@ -34,10 +34,10 @@ class User extends Authenticatable
 
     }
 
-    public function setTitleAttribute ($value){
+    public function getUrlAttribute (){
 
-        $this->attributes['title']=$value;
-        $this->attributes['slug']=str_slug($value);
+       // return route("user.show",$this->id);
+        return '#';
 
     }
 
