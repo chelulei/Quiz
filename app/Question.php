@@ -11,6 +11,7 @@ class Question extends Model
 
     protected  $perPage =5;
 
+
     public function user (){
         return $this->belongsTo(User::class);
     }
@@ -22,9 +23,15 @@ class Question extends Model
 
     }
 
+//    public function getRouteKeyName()
+//    {
+//        return 'slug';
+//    }
+
+
     public function getUrlAttribute (){
 
-      return route("questions.show",$this->id);
+      return route("questions.show",$this->slug);
 
     }
 
@@ -49,4 +56,10 @@ class Question extends Model
         }
         return "unanswered";
     }
+
+    public function getBodyHtmlAttribute()
+    {
+        return \Parsedown::instance()->text($this->body);
+    }
+
 }
