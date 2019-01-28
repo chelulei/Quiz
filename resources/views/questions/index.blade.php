@@ -26,8 +26,8 @@
                                       </div>
                                       <!-- /.vote -->
                                     <div class="status {{$question->status}} ">
-                                        <strong> {{$question->answers}}  </strong>
-                                        {{str_plural('answer',$question->answers)}}
+                                        <strong> {{$question->answers_count}}  </strong>
+                                        {{str_plural('answer',$question->answers_count)}}
                                     </div>
                                     <!-- /.status -->
                                     <div class="view">
@@ -41,13 +41,18 @@
                                       <div class="d-flex align-items-center">
                                           <a href="{{$question->url}}"> {{$question->title}}</a>
                                           <div class="ml-auto">
+
                                               {!! Form::open(['method' => 'DELETE', 'route' => ['questions.destroy', $question->id, 'class' =>'form-delete']]) !!}
                                               @csrf
+                                              @can('update',$question)
                                               <a href="{{route('questions.edit', $question->id)}}" class="btn btn-sm btn-outline-info">Edit</a>
+                                              @endcan
+                                              @can('delete',$question)
                                               <button onclick="return confirm('Are you sure?');" type="submit" class="btn btn-sm btn-outline-danger">
                                                   <i class="fa fa-times"></i>
                                                   Delete
                                               </button>
+                                              @endif
                                               {!! Form::close() !!}
                                           </div><!-- /.ml-auto -->
                                       </div>

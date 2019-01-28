@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 class QuestionController extends Controller
 {
+     public function __construct()
+     {
+         $this->middleware('auth', ['except'=>['index','show']]);
+     }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,11 +20,11 @@ class QuestionController extends Controller
     public function index()
     {
         //
-//        \DB::enableQueryLog();
+
         $questions=Question::with('user')->latest()->paginate();
       return view('questions.index',compact('questions'));
-//      ->render();
-//        dd(\DB::getQueryLog());
+
+
     }
 
     /**
@@ -70,7 +75,7 @@ class QuestionController extends Controller
      */
     public function edit(Question $question)
     {
-        //
+        $this->authorize("update",$question);
         return view("questions.edit", compact('question'));
     }
 
@@ -84,6 +89,7 @@ class QuestionController extends Controller
     public function update(Requests\AskQuestionRequest $request, Question $question)
     {
         //
+        $this->authorize("update",$question);
         $question->update($request->only('title','body'));
 
         return redirect('/questions')->with('success','Question has been Update');
@@ -97,6 +103,7 @@ class QuestionController extends Controller
      */
     public function destroy(Question $question)
     {
+        $this->authorize("delete",$question);
         //
         $question->delete();
 
