@@ -76,17 +76,12 @@ class AnswerController extends Controller
      * @param  \App\Answer  $answer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Question $question, Answer $answer)
-    {
-        //
-        $this->authorize("update",$answer);
+    public function update(Request $request, Question $question, Answer $answer){
 
-       
-        $answer->update($request->all());
-
-        return redirect()->route('questions.show',$question->slug,$answer)
-
-            ->with('success','Your answer has been Updated success fully');
+        $this->authorize('update', $answer);
+        $answer->update($request->validate(['body'=>'required']));
+        return redirect()->route('questions.show',$question->slug)
+            ->with('success','you answer has been updated');
     }
 
     /**
