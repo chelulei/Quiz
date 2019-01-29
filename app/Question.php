@@ -22,7 +22,7 @@ class Question extends Model
         $this->attributes['slug']=str_slug($value);
 
     }
-
+//
 //    public function getRouteKeyName()
 //    {
 //        return 'slug';
@@ -66,5 +66,11 @@ class Question extends Model
         return $this->hasMany(Answer::class);
     }
 
+    public function BestAnswer(Answer $answer){
+
+        $this->best_answer_id = $answer->id;
+
+        $this->save();
+    }
 
 }
