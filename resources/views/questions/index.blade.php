@@ -57,7 +57,11 @@
                                           </div><!-- /.ml-auto -->
                                       </div>
                                       <!-- /.d-flex align-items-center -->
-                                        {{str_limit($question->body,250)}}
+                                        <div class="excerpt">
+                                            {{$question->excerpt}}
+                                        </div>
+
+                                        <!-- /.excerpt -->
                                     <p class="lead">
                                         Asked by <a href="{{$question->user->url}}">{{$question->user->name}}</a>
                                         <small class="text-muted">{{$question->created_date}}</small>

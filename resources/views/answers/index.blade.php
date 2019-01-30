@@ -29,16 +29,27 @@
                         @csrf
                         <input type="hidden" name="vote" value="-1">
                     </form>
-                     @include('shared.accept')
                 </div>
                 {{--<img class="mr-3" src="..." alt="Generic placeholder image">--}}
                 <div class="media-body">
                     {!! $answer->body_html !!}
                     <div class="row">
                <div class="col-4">
-                   <div class="ml-answer">
+                   <div class="ml-auto">
+
+                       {!! Form::open(['method' => 'DELETE', 'route' => ['questions.answers.destroy', $question->id,$answer->id, 'class' =>'form-delete']]) !!}
+                       @csrf
+                       @can('update',$answer)
+                           <a href="{{route('questions.answers.edit',[$question->id,$answer->id])}}" class="btn btn-sm btn-outline-info">Edit</a>
+                       @endcan
+                       @can('delete',$answer)
+                           <button onclick="return confirm('Are you sure?');" type="submit" class="btn btn-sm btn-outline-danger">
+                               <i class="fa fa-times"></i>
+                               Delete
+                           </button>
+                       @endif
                        {!! Form::close() !!}
-                   </div>
+                   </div><!-- /.ml-auto -->
                </div>
                  <!-- /.col-4 -->
                         <div class="col-4"></div>
