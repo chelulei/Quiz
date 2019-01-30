@@ -19,15 +19,28 @@
                         <hr>
                     <div class="media">
                         <div class="d-flex flex-column vote-controls">
-                            <a title="This Question is useful"  class="vote-up">
+                            <a title="This Question is useful"
+                               class="vote-up {{Auth::guest() ? 'off': ''}}"
+                               onclick="event.preventDefault(); document.getElementById('up-vote-question-{{$question->id}}').submit();"
+                            >
                                 <i class="fa fa-caret-up fa-2x" aria-hidden="true"></i>
                                 </a>
+                            <form  id="up-vote-question-{{$question->id}}" action="/questions/{{$question->id}}/vote" method="POST" style="display: none;">
+                                @csrf
+                                <input type="hidden" name="vote" value="1">
+                            </form>
+                            <span class="votes-count">{{$question->votes_count}}</span>
 
-                            <span class="votes-count">500</span>
-
-                            <a title="This qustion is useful"  class="vote-down off">
+                            <a title="This qustion is useful"  class="vote-down {{Auth::guest() ? 'off': ''}}"
+                               onclick="event.preventDefault(); document.getElementById('down-vote-question-{{$question->id}}').submit();"
+                            >
                                 <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
                             </a>
+
+                            <form  id="down-vote-question-{{$question->id}}" action="/questions/{{$question->id}}/vote" method="POST" style="display: none;">
+                                @csrf
+                                <input type="hidden" name="vote" value="-1">
+                            </form>
 
                             <a title="Click to mark favorite question (Click again to undo)"
                                class="favorite mt-2 {{Auth::guest() ? 'off': ($question->is_favorited ? 'favorited':'')}}"
@@ -43,26 +56,26 @@
                                     @endif
                             </form>
                         </div>
+                        @include('shared.vote',[
+                        'model' => $question
+                        ])
                         <!-- /.d-flex flex-column vote-controls -->
                         <div class="media-body">
                         {!! $question->body_html !!}
-                        <div class="float-right">
-                                    <span class="text-muted">
-                                       {{ $question->date}}
-                                    </span>
-                            <div class="media mt-2">
-                                <a href="{{ $question->user->url}}" class="pr-2">
-                                    <img class="mr-3" src="{{$question->user->avatar}}" alt="Generic placeholder image">
-                                </a>
-                                <div class="media-body mt-1">
-                                    <a href="{{ $question->user->url}}" class="pr-2">
-                                        {{$question->user->name}}
-                                    </a>
-                                </div>
-                                <!-- /.media-body -->
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <!-- /.col-4 -->
+                            <div class="col-4"></div>
+                            <!-- /.col-4 -->
+                            <div class="col-4">
+                                @include('shared.author',[
+                            'model'=>$question,
+                            'label'=>'asked'
+                            ])
                             </div>
-                            <!-- /.media -->
-                        </div><!-- /.media-body -->
+                            <!-- /.col-4 -->
+                        </div>
+                        <!-- /.row -->
                     </div>
                     </div>
                     </div>
