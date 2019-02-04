@@ -7,5 +7,5 @@
     @endif
 </div>
 <div class="box-footer">
-    <button type="submit" class="btn btn-outline-primary">Submit</button>
+    <button class="btn btn-primary btn-block" type="submit">Submit your Answer</button>
 </div>

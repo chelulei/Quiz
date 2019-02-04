@@ -1,4 +1,4 @@
-<div class="card mt-4">
+<div class="card">
     <div class="card-body">
         <h5 class="card-title">
             {{$answersCount ." ". str_plural('Answer',$answersCount)}}</h5>

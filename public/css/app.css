@@ -10498,7 +10498,7 @@ a.text-dark:focus {
 
 .counters {
   margin-right: 30px;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -10509,8 +10509,8 @@ a.text-dark:focus {
 
 .counters .vote,
 .counters .answer {
-  width: 60px;
-  height: 60px;
+  /*width: 60px;*/
+  /*height: 60px;*/
 }
 
 .counters .status.unanswered {
