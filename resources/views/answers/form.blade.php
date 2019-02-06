@@ -1,3 +1,4 @@
+
 @csrf
 <div class="form-group {{ $errors->has('body') ? 'has-error' : '' }}">
     {!! Form::label('body','Explain your Answer') !!}

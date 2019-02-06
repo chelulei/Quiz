@@ -13,7 +13,7 @@
 <!-- END Header -->
 
 <!-- Main container -->
-<main class="main-content">
+<main class="main-content bg-gray">
     @yield('content')
 </main>
 <!-- END Main container -->

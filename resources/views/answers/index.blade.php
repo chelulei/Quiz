@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card bg-grey">
     <div class="card-body">
         <h5 class="card-title">
             {{$answersCount ." ". str_plural('Answer',$answersCount)}}</h5>
@@ -19,7 +19,7 @@
                     </form>
                     <span class="votes-count">{{$answer->votes_count}}</span>
 
-                    <a title="This answer is useful"  class="vote-down {{Auth::guest() ? 'off': ''}}"
+                    <a title="This answer is not useful"  class="vote-down {{Auth::guest() ? 'off': ''}}"
                        onclick="event.preventDefault(); document.getElementById('down-vote-answer-{{$answer->id}}').submit();"
                     >
                         <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
@@ -29,8 +29,33 @@
                         @csrf
                         <input type="hidden" name="vote" value="-1">
                     </form>
+
+                    {{--<a href="" title="Mark this answer as the best  answer"  class="vote-accepted mt-2">--}}
+                    {{--<i class="fa fa-check fa-2x" aria-hidden="true"></i>--}}
+                    {{--</a>--}}
+
+                    @can('accept',$answer)
+
+                    <a  href="" title="Mark this answer as the best  answer"  class="{{$answer->status}} mt-2"
+                       onclick="event.preventDefault(); document.getElementById('accept-answer-{{$answer->id}}').submit();"
+                    >
+                        <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                    </a>
+
+                    <form  id="accept-answer-{{$answer->id}}" action="{{route('answers.accept',$answer->id)}}" method="POST" style="display: none;">
+                        @csrf
+                        <input type="hidden" name="vote" value="-1">
+                    </form>
+                    @else
+                        @if($answer->is_best)
+                            <a href="" title="The question owner accepted this answer as the best  answer"  class="{{$answer->status}} mt-2"
+                            >
+                                <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                            </a>
+                            @endif
+                    @endcan
                 </div>
-                {{--<img class="mr-3" src="..." alt="Generic placeholder image">--}}
+
                 <div class="media-body">
                     {!! $answer->body_html !!}
                     <div class="row">

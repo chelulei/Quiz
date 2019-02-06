@@ -13,19 +13,16 @@
 
         <div class="topbar-right">
             <ul class="topbar-nav nav">
-                <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                @if (Route::has('login'))
+                    @auth
+                <li class="nav-item"><a class="nav-link" href="{{ url('/home') }}">Home</a></li>
+                    @else
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Samples <i class="fa fa-caret-down"></i></a>
-                    <div class="nav-submenu">
-                        <a class="nav-link" href="single.php">page1</a>
-                    </div>
+                    <a class="nav-link" href="{{ route('login') }}">login</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Headers <i class="fa fa-caret-down"></i></a>
-                    <div class="nav-submenu">
-                        <a class="nav-link" href="header-color.html">Solid Color</a>
-                    </div>
+                    <a class="nav-link" href="{{ route('register') }}">Register</a>
                 </li>
 
                 <li class="nav-item">
@@ -35,7 +32,8 @@
                         <a class="nav-link" href="blog-grid.html">Layout grid</a>
                     </div>
                 </li>
-
+                    @endauth
+                @endif
             </ul>
         </div>
 

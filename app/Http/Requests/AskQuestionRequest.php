@@ -24,6 +24,7 @@ class AskQuestionRequest extends FormRequest
     public function rules()
     {
         return [
+            'category_id' => 'required',
             'title' => 'required|max:255',
             'body' => 'required',
         ];

@@ -34,3 +34,8 @@ Route::get('/test', [
     'uses' => 'PagesController@test',
     'as'   => 'main'
 ]);
+
+Route::get('/category/{category}', [
+    'uses' => 'QuestionController@category',
+    'as'   => 'category'
+]);

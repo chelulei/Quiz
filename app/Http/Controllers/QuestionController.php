@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Category;
+use Illuminate\Htt;
 use App\Question;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -20,9 +21,30 @@ class QuestionController extends Controller
     public function index()
     {
         //
+     $categories= Category::with('questions')->orderBy('title','asc')->get();
+        $questions=Question::with('user','category')->latest()->paginate();
 
-        $questions=Question::with('user')->latest()->paginate();
-      return view('questions.index',compact('questions'));
+      return view('questions.index',compact('questions','categories'));
+
+
+    }
+
+    public function category(Category $category)
+    {
+        //
+        /*title*/
+        $categoryName = $category->title;
+
+        $categories = Category::with('questions')
+
+            ->orderBy('title','asc')->get();
+
+            $questions=$category->questions()
+
+            ->latest()
+            ->paginate();
+
+        return view('questions.index',compact('questions','categories','categoryName'));
 
 
     }
