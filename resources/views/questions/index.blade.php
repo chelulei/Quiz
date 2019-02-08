@@ -2,21 +2,33 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card-header">
-                    <div class="d-flex align-items-center">
-                        <h2> All questions</h2>
-                        <div class="ml-auto">
-                            <a href="{{route('questions.create')}}" class="btn btn-primary">Ask Question</a>
-                        </div><!-- /.ml-auto -->
+        <div class="row mt-2">
+            <div class="col-md-4">
+                <h2> All questions</h2>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-6">
+                <form action="{{ route('questions') }}">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term"
+                               placeholder="Search for...">
+                        <span class="input-group-btn">
+                <button class="btn btn-lg btn-primary" type="submit">
+                <i class="fa fa-search"></i>
+                </button>
+                </span>
                     </div>
-                    <!-- /.d-flex align-items-center -->
+                </form>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-2">
+                <div class="ml-auto">
+                    <a href="{{route('questions.create')}}" class="btn btn-primary">Ask Question</a>
                 </div>
             </div>
-            <!-- /.col-md-12 -->
+            <!-- /.col-md-4 -->
         </div>
-        <!-- /.row -->
+<!-- /.row -->
         <div class="row">
             <div class="col-md-8 col-xl-9 py-50">
                 @if (! $questions->count())
@@ -25,7 +37,9 @@
                     </div>
                 @else
                 <div class="row gap-y">
+
                     <div class="col-md-12">
+                      @include('questions.alert')
                         @foreach($questions as $question)
                             <div class="card card-hover-shadow">
                                 <div class="card mb-30">
@@ -69,6 +83,9 @@
                                                     @endif
                                                     {!! Form::close() !!}
                                                 </p>
+
+
+
                                                 <p class="card-text">
                                                     Asked by <a href="{{$question->user->url}}">{{$question->user->name}}</a>
                                                     <small class="text-muted">{{$question->created_date}}</small>
@@ -88,7 +105,10 @@
 
                 </div>
                 @endif
-                {{ $questions->links()}}
+
+
+                        {{ $questions->links()}}
+
             </div>
 
 

@@ -12,7 +12,7 @@ class QuestionController extends Controller
      {
          $this->middleware('auth', ['except'=>['index','show']]);
      }
-
+    protected $limit =3;
     /**
      * Display a listing of the resource.
      *
@@ -20,31 +20,32 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        //
-     $categories= Category::with('questions')->orderBy('title','asc')->get();
-        $questions=Question::with('user','category')->latest()->paginate();
 
-      return view('questions.index',compact('questions','categories'));
+        $questions=Question::with('user')
+            ->latestFirst()
+//            if($term= request('term')){
+//
+//                $questions->where('title','LIKE',"%{{$term}}%");
+//
+//            }
+            ->paginate($this->limit);
+
+      return view('questions.index',compact('questions'));
 
 
     }
 
     public function category(Category $category)
     {
-        //
         /*title*/
         $categoryName = $category->title;
 
-        $categories = Category::with('questions')
-
-            ->orderBy('title','asc')->get();
-
-            $questions=$category->questions()
-
-            ->latest()
-            ->paginate();
-
-        return view('questions.index',compact('questions','categories','categoryName'));
+            $questions=$category
+                ->questions()
+                ->with('user')
+                ->latestFirst()
+                ->paginate($this->limit);
+        return view('questions.index',compact('questions','categoryName'));
 
 
     }
@@ -70,7 +71,7 @@ class QuestionController extends Controller
     public function store(Requests\AskQuestionRequest $request)
     {
         //
-        $request->user()->questions()->create($request->only('title','body'));
+        $request->user()->questions()->create($request->all());
 
         return redirect('/questions')->with('success','Question has been submitted');
     }
