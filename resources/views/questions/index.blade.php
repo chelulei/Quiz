@@ -84,13 +84,17 @@
                                                     {!! Form::close() !!}
                                                 </p>
 
-
-
                                                 <p class="card-text">
-                                                    Asked by <a href="{{$question->user->url}}">{{$question->user->name}}</a>
-                                                    <small class="text-muted">{{$question->created_date}}</small>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-user"></i><a href="{{$question->user->url}}"> {{$question->user->name}}</a></li>
+                                                    <li class="list-inline-item"><i class="fa fa-clock-o"></i> {{$question->date}}</li>
+                                                    <li class="list-inline-item"><i class="fa fa-comments"></i><a href="#"> <strong>{{$question->answers_count}} </strong>
+                                                            {{str_plural('answer',$question->answers_count)}}</a></li>
+                                                </ul>
+
+                                                <p class="pull-right card-text"><a href="{{$question->url}}">Read more &raquo;</a></p>
+
                                                 </p>
-                                                <a class="fw-600 fs-12" href="{{$question->url}}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
                                             </div>
                                         </div>
                                     </div>
