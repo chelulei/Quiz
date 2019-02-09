@@ -106,13 +106,9 @@
 
                     </div>
 
-
                 </div>
                 @endif
-
-
-                        {{ $questions->links()}}
-
+                        {{ $questions->appends(request()->only(['term']))->links()}}
             </div>
 
 

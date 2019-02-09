@@ -108,5 +108,24 @@ class Question extends Model
     }
 
 
+    public function scopeFilter($query, $term)
+    {
+    // check if any term entered
+        if ($term)
+        {
+        $query->where(function($q) use ($term) {
+//                      $q->WhereHas('user', function($qr) use ($term) {
+//                           $qr->orWhere( 'name', 'LIKE', "%{$term}%");
+//                               });
+//                        $q->WhereHas('category', function($qr) use ($term) {
+//                            $qr->orWhere( 'title', 'LIKE', "%{$term}%");
+//                        });
+                        $q->orWhere('title', 'LIKE', "%{$term}%");
+                        $q->orWhere('body', 'LIKE', "%{$term}%");
+                    });
+                }
+
+            }
+
 
 }

@@ -23,15 +23,10 @@ class QuestionController extends Controller
 
         $questions=Question::with('user')
             ->latestFirst()
-//            if($term= request('term')){
-//
-//                $questions->where('title','LIKE',"%{{$term}}%");
-//
-//            }
+            ->filter(request('term'))
             ->paginate($this->limit);
 
       return view('questions.index',compact('questions'));
-
 
     }
 
