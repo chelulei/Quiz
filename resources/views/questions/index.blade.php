@@ -83,7 +83,6 @@
                                                     @endif
                                                     {!! Form::close() !!}
                                                 </p>
-
                                                 <p class="card-text">
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item"><i class="fa fa-user"></i><a href="{{$question->user->url}}"> {{$question->user->name}}</a></li>

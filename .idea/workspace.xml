@@ -4,7 +4,187 @@
     <list default="true" id="88d9e432-8245-49a9-977d-88b9757c5c20" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/VotableTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/VotableTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/core.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/thesaas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/thesaas.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/thesaas.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/thesaas.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/et-line.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/et-line.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/et-line.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/et-line.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/themify.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/themify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/themify.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/about-us.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar/large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/badge-apple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/badge-google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg-cup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg-gift.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg-girl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg-laptop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg-man.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg-pattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg-stars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg-thunder.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blog-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-app-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-app.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-bootstrap-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-bootstrap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-github-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-github.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-gmail-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-gmail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-helpato-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-helpato.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-skype-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-skype.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-slack-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-slack.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-soon-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-soon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-trello-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-trello.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-zendesk-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo-zendesk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/shot-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/app/signup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/bootstrap/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/bootstrap/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/github/feature-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/github/feature-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/github/feature-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/github/welcome.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/gmail/attachment.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/gmail/compose.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/gmail/feature.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/gmail/intro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/helpato/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/helpato/slider-admin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/helpato/slider-article.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/helpato/slider-dashboard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/helpato/slider-faq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/helpato/slider-forum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/helpato/slider-items.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/skype/tab-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/skype/tab-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/skype/tab-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/slack/cta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/slack/dashboard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/slack/drag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/slack/everywhere.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/slack/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/slack/tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/trello/calendar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/trello/dashboard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/trello/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/trello/members.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/zendesk/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/demo/zendesk/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/feature-tablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header-color.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header-gradient.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header-parallax.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header-particle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header-slider.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header-typing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header-video.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/icon-dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/icon-planet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/icon-rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/icons-etline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/icons-fontawesome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/icons-themify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/mobile-hand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/og-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/partner-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/partner-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/partner-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/partner-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/partner-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/partner-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/partner-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/phone-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/phone-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/portfolio-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/portfolio-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/portfolio-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/portfolio-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/portfolio-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/portfolio-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/portfolio-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/portfolio-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/pricing-window.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-screen-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-screen-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-screen-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/product-screen-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/request-demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/video/workspace.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/video/workspace.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/video/workspace.webm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/workspace.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/core.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/thesaas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/thesaas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/PHPMailer/PHPMailerAutoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/PHPMailer/class.phpmailer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/PHPMailer/class.phpmaileroauth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/PHPMailer/class.phpmaileroauthgoogle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/PHPMailer/class.pop3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/PHPMailer/class.smtp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/PHPMailer/get_oauth_token.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/sendmail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/php/sendmail_depricated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/top.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/questions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questions/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,50 +199,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/questions/index.blade.php">
+      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="110" column="84" selection-start-line="110" selection-start-column="84" selection-end-line="110" selection-end-column="84" />
-              <folding>
-                <element signature="e#5795#5802#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="1280">
+              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Question.php">
+      <file leaf-file-name="head.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/head.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="464">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alert.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/questions/alert.blade.php">
+      <file leaf-file-name="scripts.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/scripts.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1737">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+              <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -124,11 +292,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/shared/accept.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/shared/favorite.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/shared/vote.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/scripts.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/css/thesaas.css" />
         <option value="$PROJECT_DIR$/public/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
@@ -136,7 +301,6 @@
         <option value="$PROJECT_DIR$/resources/views/shared/author.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/answers/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/questions/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/head.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/answers/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/answers/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/login.blade.php" />
@@ -161,9 +325,7 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/top.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/questions/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backend_partials/_head.blade.php" />
@@ -172,9 +334,15 @@
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/backend/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/backend/main.blade.php" />
+        <option value="$PROJECT_DIR$/app/Question.php" />
+        <option value="$PROJECT_DIR$/app/VotableTrait.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
         <option value="$PROJECT_DIR$/resources/views/questions/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Question.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/head.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/scripts.blade.php" />
       </list>
     </option>
   </component>
@@ -306,11 +474,6 @@
               <item name="quiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="quiz" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="quiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quiz" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -385,17 +548,18 @@
       <workItem from="1549566420585" duration="14906000" />
       <workItem from="1549621164438" duration="6712000" />
       <workItem from="1549650560924" duration="6066000" />
+      <workItem from="1549714153517" duration="2400000" />
+      <workItem from="1549837101532" duration="3333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222966000" />
+    <option name="totallyTimeSpent" value="228699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11170213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1724924" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -404,7 +568,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2579666" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.040971167" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -446,25 +610,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/questions/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="102" column="26" lean-forward="true" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Policies/QuestionPolicy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shared/author.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/shared/favorite.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -507,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/login.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -551,13 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsersQuestionAnswersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="66" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -631,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/layout.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/partials/top.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -647,13 +771,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backend_partials/_scripts.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backend_partials/_head.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend/left.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
@@ -689,7 +806,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/questions/alert.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -700,27 +817,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2320">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/VotableTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersQuestionAnswersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1737">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="420">
+          <caret line="109" column="45" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/questions/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="110" column="84" selection-start-line="110" selection-start-column="84" selection-end-line="110" selection-end-column="84" />
+        <state relative-caret-position="20">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
-            <element signature="e#5795#5802#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Question.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="1280">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/scripts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
         </state>
       </provider>
     </entry>

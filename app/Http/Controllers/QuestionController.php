@@ -108,6 +108,7 @@ class QuestionController extends Controller
     {
         //
         $this->authorize("update",$question);
+
         $question->update($request->only('title','body'));
 
         return redirect('/questions')->with('success','Question has been Update');

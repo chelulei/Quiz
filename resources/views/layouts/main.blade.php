@@ -11,6 +11,9 @@
 <!-- Header -->
 @include('partials.header')
 <!-- END Header -->
+<!-- banner -->
+@include('partials.banner')
+<!-- END banner -->
 
 <!-- Main container -->
 <main class="main-content bg-gray min-vh-100">
