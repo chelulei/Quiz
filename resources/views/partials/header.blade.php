@@ -6,7 +6,7 @@
 
                 </div>
                 <div class="col-lg-6 col-sm-6 col-8 header-top-right">
-                    <a href="#" class="primary-btn text-uppercase">Book Appointment</a>
+                    {{--<a href="#" class="primary-btn text-uppercase">Book Appointment</a>--}}
                 </div>
             </div>
         </div>

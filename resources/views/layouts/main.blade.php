@@ -5,10 +5,6 @@
 </head>
 
 <body>
-<!-- Topbar -->
-@include('partials.top')
-<!-- END Topbar -->
-<!-- Header -->
 @include('partials.header')
 <!-- END Header -->
 <!-- banner -->
@@ -16,9 +12,9 @@
 <!-- END banner -->
 
 <!-- Main container -->
-<main class="main-content bg-gray min-vh-100">
+
     @yield('content')
-</main>
+
 <!-- END Main container -->
 <!-- Footer -->
 @include('partials.footer')

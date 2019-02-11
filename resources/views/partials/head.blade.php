@@ -17,6 +17,7 @@
 <!--
 CSS
 ============================================= -->
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/linearicons.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
