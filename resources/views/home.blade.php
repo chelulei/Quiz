@@ -1,5 +1,21 @@
 @extends('layouts.layout')
 @section('content')
+    <header class="header header-inverse pt-150" style="background-color: #69BE00">
+        <div class="container text-center">
+
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2">
+
+                    <h1>Latest Questions</h1>
+                    <p class="fs-20 opacity-70 pt-1">
+                        <a href="{{route('questions.create')}}" class="btn btn-primary">Ask Question</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
     <section class="post-content-area">
         <div class="container">
             <div class="row">
@@ -45,7 +61,7 @@
                                     </ul>
                                     </p>
 
-                                    <a href="{{$question->url}}" class="primary-btn">View More</a>
+                                    <a href="{{$question->url}}" class="primary-btn">Read More</a>
 
                                 </div>
                             </div>

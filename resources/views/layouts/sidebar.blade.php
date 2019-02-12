@@ -1,10 +1,10 @@
 
-    <div class="single-sidebar-widget search-widget">
-        <form class="search-form" action="{{ route('questions') }}">
-            <input placeholder="Search Questions" value="{{ request('term') }}" name="term"type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'" >
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
+    {{--<div class="single-sidebar-widget search-widget">--}}
+        {{--<form class="search-form" action="{{ route('questions') }}">--}}
+            {{--<input placeholder="Search Questions" value="{{ request('term') }}" name="term"type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'" >--}}
+            {{--<button type="submit"><i class="fa fa-search"></i></button>--}}
+        {{--</form>--}}
+    {{--</div>--}}
 
     {{--<div class="single-sidebar-widget popular-post-widget">--}}
         {{--<h4 class="popular-title">Popular Questions</h4>--}}

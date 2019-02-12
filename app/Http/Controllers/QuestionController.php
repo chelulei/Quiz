@@ -67,8 +67,8 @@ class QuestionController extends Controller
     {
         //
         $request->user()->questions()->create($request->all());
-
-        return redirect('/questions')->with('success','Question has been submitted');
+        flash('Question has been submitted!','success');
+        return redirect('/questions');
     }
 
     /**
@@ -114,6 +114,9 @@ class QuestionController extends Controller
         return redirect('/questions')->with('success','Question has been Update');
     }
 
+
+
+
     /**
      * Remove the specified resource from storage.
      *
@@ -125,8 +128,9 @@ class QuestionController extends Controller
         $this->authorize("delete",$question);
         //
         $question->delete();
+        flash('Question has been deleted successfully!','danger');
 
-        return redirect()->route('questions.index')
-            ->with('success','question deleted successfully');
+        return redirect()->route('questions.index');
+
     }
 }

@@ -3,7 +3,7 @@
         <h5 class="card-title">
             {{$answersCount ." ". str_plural('Answer',$answersCount)}}</h5>
         <hr>
-        @include('layouts._messages')
+
         @foreach ($answers as $answer)
             <div class="media">
                 <div class="d-flex flex-column vote-controls">

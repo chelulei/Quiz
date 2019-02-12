@@ -16,13 +16,19 @@
 
 <script>
     $(window).scroll(function() {
-        if ($(this).scrollTop()<  200)
-        {
-            $('.search').fadeOut();
-        }
-        else
+        if ($(this).scrollTop() > 200)
         {
             $('.search').fadeIn();
         }
+        else
+        {
+
+            $('.search').fadeOut();
+        }
     });
+
+    $('#flash-overlay-modal').modal();
+
+    $('div.alert').not('.alert-important,.alert-info').delay(3000).fadeOut(350);
+
 </script>
