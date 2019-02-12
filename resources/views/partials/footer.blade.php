@@ -24,22 +24,18 @@
             </div>
             <div class="col-lg-6  col-md-12">
                 <div class="single-footer-widget newsletter">
-                    <h6>Newsletter</h6>
-                    <p>You can trust us. we only send promo offers, not a single spam.</p>
                     <div id="mc_embed_signup">
-                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-
                             <div class="form-group row" style="width: 100%">
                                 <div class="col-lg-8 col-md-12">
-                                    <input name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+
                                 </div>
 
                                 <div class="col-lg-4 col-md-12">
-                                    <button class="nw-btn primary-btn circle">Subscribe<span class="lnr lnr-arrow-right"></span></button>
+
                                 </div>
                             </div>
                             <div class="info"></div>
-                        </form>
+
                     </div>
                 </div>
             </div>

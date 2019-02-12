@@ -12,4 +12,17 @@
 <script src="{{asset('assets/js/jquery.nice-select.min.js')}}"></script>
 <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('assets/js/mail-script.js')}}"></script>
-<script src="{{asset('assets/js/main.js')}}"></script>')}}.js')}}"></script>
+<script src="{{asset('assets/js/main.js')}}"></script>
+
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop()<  200)
+        {
+            $('.search').fadeOut();
+        }
+        else
+        {
+            $('.search').fadeIn();
+        }
+    });
+</script>

@@ -2,20 +2,16 @@
 <html lang="en">
 <head>
     @include('partials.head')
+    @yield('style')
 </head>
 
 <body>
-<!-- Topbar -->
-@include('partials.top')
-<!-- END Topbar -->
-<!-- Topbar -->
-@include('partials.top')
-<!-- END Topbar -->
-
+@include('partials.nav')
+<!-- END Header -->
 <!-- Main container -->
-<main class="main-content bg-gray min-vh-100">
-    @yield('content')
-</main>
+
+@yield('content')
+
 <!-- END Main container -->
 <!-- Footer -->
 @include('partials.footer')

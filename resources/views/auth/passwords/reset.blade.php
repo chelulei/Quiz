@@ -2,7 +2,14 @@
 
 @section('content')
 
-                <div class="card card-shadowed p-50 mb-0" style="max-width: 100%">
+    <div class="login-content">
+        <div class="login-logo">
+            <a href="#">
+                <img class="align-content" src="backend/images/logo.png" alt="">
+            </a>
+            {{--<h5 class="text-uppercase text-center">{{ __('Login') }}</h5>--}}
+        </div>
+        <div class="login-form">
                     <h5 class="text-uppercase text-center">{{ __('Reset Password') }}</h5>
                     <br><br>
                     <form method="POST" action="{{ route('password.update') }}">
@@ -42,5 +49,6 @@
                         </div>
                     </form>
                 </div>
+    </div>
 
 @endsection

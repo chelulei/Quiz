@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('partials.head')
+    @include('backend_partials._head')
 </head>
 
-<body class="mh-fullscreen bg-img center-vh p-20">
+<body  class="mh-fullscreen bg-img center-vh p- bg-dark">
 <!-- Main container -->
-<div class="card card-shadowed p-50 w-500 mb-0" style="max-width: 100%">
+<div class="sufee-login d-flex align-content-center flex-wrap"><div class="container">
     @yield('content')
+</div>
 </div>
 <!-- END Main container -->
 <!-- Scripts -->
-@include('partials.scripts')
+@include('backend_partials._scripts')
 </body>
 </html>

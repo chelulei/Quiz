@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         @include('layouts._messages')
-        <div class="row justify-content-center">
+        <div class="row justify-content-center vh-100 mt-150">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">

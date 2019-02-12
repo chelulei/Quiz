@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" class="bg-primary">
     <div class="header-top">
         <div class="container">
             <div class="row align-items-center">
@@ -20,7 +20,6 @@
                 </a>
             </div>
                 <form class="my-auto d-inline w-50" action="{{ route('questions') }}">
-                    <div class="search">
                         <div class="input-group">
                             <input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term"
                                    placeholder="Search for...">
@@ -30,14 +29,12 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
-                    <!-- /.search -->
                 </form>
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     @if (Route::has('login'))
                         @auth
                             <li class="nav-item active">

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-150">
             <div class="col-md-12">
 
                 <div class="card">
@@ -55,5 +55,5 @@
             ])
         @include('answers.create')
     </div>
-
+<div class="mt-150"></div>
 @endsection

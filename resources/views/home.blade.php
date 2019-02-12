@@ -1,128 +1,71 @@
-@extends('layouts.backend.main')
+@extends('layouts.layout')
 @section('content')
-    <div class="col-sm-12">
-        <div class="alert  alert-success alert-dismissible fade show" role="alert">
-            <span class="badge badge-pill badge-success">Success</span> You successfully read this important alert message.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    </div>
+    <section class="post-content-area">
+        <div class="container">
+            <div class="row">
 
-    <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-flat-color-1">
-            <div class="card-body pb-0">
-                <div class="dropdown float-right">
-                    <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton1" data-toggle="dropdown">
-                        <i class="fa fa-cog"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <div class="dropdown-menu-content">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                <div class="col-lg-8 posts-list">
+                    @if (! $questions->count())
+                        <div class="alert alert-danger">
+                            <strong>No record found</strong>
                         </div>
+                    @else
+                        @include('questions.alert')
+                        @foreach($questions as $question)
+                            <div class="single-post row">
+                                <div class="col-lg-3  col-md-3 meta-details">
+                                </div>
+                                <div class="col-lg-9 col-md-9 ">
+
+                                    <a class="posts-title" href="{{$question->url}}"><h3>{{$question->title}}</h3></a>
+                                    <p class="excert">
+                                        {{$question->excerpt}}
+                                    </p>
+                                    {!! Form::open(['method' => 'DELETE', 'route' => ['questions.destroy', $question->id, 'class' =>'form-delete']]) !!}
+                                    @csrf
+                                    @can('update',$question)
+                                        <a href="{{route('questions.edit', $question->id)}}" class="btn btn-sm btn-outline-info">Edit</a>
+                                    @endcan
+                                    @can('delete',$question)
+                                        <button onclick="return confirm('Are you sure?');" type="submit" class="btn btn-sm btn-outline-danger">
+                                            <i class="fa fa-times"></i>
+                                            Delete
+                                        </button>
+                                    @endif
+                                    {!! Form::close() !!}
+                                    <p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-user"></i><a href="{{$question->user->url}}"> {{$question->user->name}}</a></li>
+                                        <li class="list-inline-item"><i class="fa fa-clock-o"></i> {{$question->date}}</li>
+                                        <li class="list-inline-item"><i class="fa fa-comments"></i>
+                                            <a href="{{$question->url}}">
+                                                <span class="badge badge-info">Answer</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </p>
+
+                                    <a href="{{$question->url}}" class="primary-btn">View More</a>
+
+                                </div>
+                            </div>
+                        @endforeach
+                        <nav class="blog-pagination justify-content-center d-flex">
+                            <ul class="pagination">
+                                {{ $questions->appends(request()->only(['term']))->links()}}
+                            </ul>
+                        </nav>
+                    @endif
+                </div>
+                <div class="col-lg-4 sidebar-widgets">
+                    <div class="widget-wrap">
+                        @include('layouts.sidebar')
                     </div>
                 </div>
-                <h4 class="mb-0">
-                    <span class="count">10468</span>
-                </h4>
-                <p class="text-light">Members online</p>
-
-                <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                    <canvas id="widgetChart1"></canvas>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-    <!--/.col-->
-
-    <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-flat-color-2">
-            <div class="card-body pb-0">
-                <div class="dropdown float-right">
-                    <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton2" data-toggle="dropdown">
-                        <i class="fa fa-cog"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <div class="dropdown-menu-content">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="mb-0">
-                    <span class="count">10468</span>
-                </h4>
-                <p class="text-light">Members online</p>
-
-                <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                    <canvas id="widgetChart2"></canvas>
-                </div>
-
             </div>
         </div>
-    </div>
-    <!--/.col-->
-
-    <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-flat-color-3">
-            <div class="card-body pb-0">
-                <div class="dropdown float-right">
-                    <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton3" data-toggle="dropdown">
-                        <i class="fa fa-cog"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                        <div class="dropdown-menu-content">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="mb-0">
-                    <span class="count">10468</span>
-                </h4>
-                <p class="text-light">Members online</p>
-
-            </div>
-
-            <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                <canvas id="widgetChart3"></canvas>
-            </div>
-        </div>
-    </div>
-    <!--/.col-->
-
-    <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-flat-color-4">
-            <div class="card-body pb-0">
-                <div class="dropdown float-right">
-                    <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton4" data-toggle="dropdown">
-                        <i class="fa fa-cog"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                        <div class="dropdown-menu-content">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="mb-0">
-                    <span class="count">10468</span>
-                </h4>
-                <p class="text-light">Members online</p>
-
-                <div class="chart-wrapper px-3" style="height:70px;" height="70">
-                    <canvas id="widgetChart4"></canvas>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--/.col-->
+    </section>
+    <!-- End post-content Area -->
 @endsection
+
+

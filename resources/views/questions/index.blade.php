@@ -1,25 +1,10 @@
 @extends('layouts.main')
-
 @section('content')
-    <section class="top-category-widget-area pt-90 pb-90 ">
+    <section class="top-category-widget-area pt-30 pb-30 ">
         <div class="container">
             <div class="row mt-2">
-                <div class="col-md-4">
+                <div class="col-md-8 offset-2">
                     <h2> All questions</h2>
-                </div>
-                <!-- /.col-md-4 -->
-                <div class="col-md-6">
-                    {{--<form action="{{ route('questions') }}">--}}
-                        {{--<div class="input-group">--}}
-                            {{--<input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term"--}}
-                                   {{--placeholder="Search for...">--}}
-                            {{--<span class="input-group-btn">--}}
-                {{--<button class="btn btn-lg btn-primary" type="submit">--}}
-                {{--<i class="fa fa-search"></i>--}}
-                {{--</button>--}}
-                {{--</span>--}}
-                        {{--</div>--}}
-                    {{--</form>--}}
                 </div>
                 <!-- /.col-md-4 -->
                 <div class="col-md-2">
@@ -89,8 +74,11 @@
                                         <ul class="list-inline">
                                             <li class="list-inline-item"><i class="fa fa-user"></i><a href="{{$question->user->url}}"> {{$question->user->name}}</a></li>
                                             <li class="list-inline-item"><i class="fa fa-clock-o"></i> {{$question->date}}</li>
-                                            <li class="list-inline-item"><i class="fa fa-comments"></i><a href="#"> <strong>{{$question->answers_count}} </strong>
-                                                    {{str_plural('answer',$question->answers_count)}}</a></li>
+                                            <li class="list-inline-item"><i class="fa fa-comments"></i>
+                                                <a href="{{$question->url}}">
+                                                    <span class="badge badge-info">Answer</span>
+                                                    </a>
+                                            </li>
                                         </ul>
                                         </p>
 
@@ -107,12 +95,14 @@
                                     @endif
                             </div>
                             <div class="col-lg-4 sidebar-widgets">
+                                <div class="widget-wrap">
                               @include('layouts.sidebar')
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- End post-content Area -->
+      @endsection
 
 
-@endsection

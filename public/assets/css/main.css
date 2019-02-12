@@ -3541,6 +3541,7 @@ dl.toggle.time-line:before {
   /*background: url(../img/blog/blog-home-banner.jpg) bottom;*/
   /*background-size: cover;*/
   /*padding: 130px 0px;*/
+  background-color:#006CFF;
 }
 
 .blog-home-banner .primary-btn {
