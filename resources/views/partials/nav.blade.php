@@ -33,24 +33,93 @@
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    @if (Route::has('login'))
-                        @auth
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{ url('/home') }}">Home <span class="sr-only">(current)</span></a>
+                        <li><a href="{{route('questions.index')}}">Blog</a></li>
+                <!-- #notifications -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="head text-light bg-dark">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-12">
+                                        <span>Notifications (3)</span>
+                                        <a href="" class="float-right text-light">Mark all as read</a>
+                                    </div>
+                                </div>
                             </li>
-                        @else
-                            <li class="nav-item">
-                                <a class="nav-link login" href="{{ route('login') }}">Login</a>
+                            <li class="notification-box">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 col-3 text-center">
+                                        <img src="/demo/man-profile.jpg" class="w-50 rounded-circle">
+                                    </div>
+                                    <div class="col-lg-8 col-sm-8 col-8">
+                                        <strong class="text-info">David John</strong>
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                        </div>
+                                        <small class="text-warning">27.11.2015, 15:00</small>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">Register</a>
+                            <li class="notification-box bg-gray">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 col-3 text-center">
+                                        <img src="/demo/man-profile.jpg" class="w-50 rounded-circle">
+                                    </div>
+                                    <div class="col-lg-8 col-sm-8 col-8">
+                                        <strong class="text-info">David John</strong>
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                        </div>
+                                        <small class="text-warning">27.11.2015, 15:00</small>
+                                    </div>
+                                </div>
                             </li>
-                        @endauth
-                    @endif
+                            <li class="notification-box">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 col-3 text-center">
+                                        <img src="/demo/man-profile.jpg" class="w-50 rounded-circle">
+                                    </div>
+                                    <div class="col-lg-8 col-sm-8 col-8">
+                                        <strong class="text-info">David John</strong>
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                        </div>
+                                        <small class="text-warning">27.11.2015, 15:00</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="footer bg-dark text-center">
+                                <a href="" class="text-light">View All</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" id="navbarDropdown1" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/img/user.png" class="profpic float-right rounded-circle" alt="Profile picture">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item text-center" href="{{route('backend.account.index')}}">View Profile</a></li>
+                            <?php $user = Auth::user(); ?>
+                            <li><a class="dropdown-item text-center" href="{{ route('profile-edit', ['user' => $user]) }}">Edit Password</a></li>
+                            <li>
+                                <a class="dropdown-item text-center" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
     </div>
 </header>
+
+

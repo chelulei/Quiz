@@ -29,10 +29,11 @@ Route::delete('/questions/{question}/favorites', 'FavoritesController@destroy')-
 Route::post('/questions/{question}/vote', 'VoteQuestionController');
 Route::post('/answers/{answer}/vote', 'VoteAnswerController');
 
-
-Route::get('/test', [
-    'uses' => 'PagesController@test',
-    'as'   => 'main'
+Route::resource('/account', 'AccountController',['as'=>'backend']);
+Route::put('/profile/{user}', 'ProfileController@update')->name('profile.update');
+Route::get('/profile/{user}/edit', [
+    'uses' => 'ProfileController@edit',
+    'as'   => 'profile-edit'
 ]);
 
 Route::get('/category/{category}', [
