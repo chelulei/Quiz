@@ -40,3 +40,6 @@ Route::get('/category/{category}', [
     'uses' => 'QuestionController@category',
     'as'   => 'category'
 ]);
+
+Route::get('login/{service}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{service}/callback', 'Auth\LoginController@handleProviderCallback');
