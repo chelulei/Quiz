@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 use Socialite;
 use App\User;
 use Auth;
@@ -40,39 +41,46 @@ class LoginController extends Controller
     }
 
     /**
-     * Redirect the user to the $service authentication page.
+     * Redirect the user to the $facebook authentication page.
      *
      * @return \Illuminate\Http\Response
      */
-    public function redirectToProvider($service)
+    public function redirectToProvider()
     {
-        return Socialite::driver($service)->redirect();
+        return Socialite::driver('facebook')->redirect();
     }
 
     /**
-     * Obtain the user information from $service.
+     * Obtain the user information from $facebook.
      *
      * @return \Illuminate\Http\Response
      */
-    public function handleProviderCallback($service)
-    {
-        $userSocial = Socialite::driver($service)->user();
+    public function handleProviderCallback()
+    { try {
+        $user = Socialite::driver('facebook')->user();
 
-           // return $userSocial->name;
-        $finduser = User::where('email',$userSocial->email)->first();
+        $create['name'] = $user->getName();
+        $create['email'] = $user->getEmail();
+        $create['provider_id'] = $user->getId();
 
-          if( $finduser ){
 
-              Auth::login($finduser);
+        $userModel = new User;
+        $createdUser = $userModel->addNew($create);
+        Auth::loginUsingId($createdUser->id);
 
-        }else{
-            $user = new User;
-            $user->name = $userSocial->name;
-            $user->email = $userSocial->email;
-            $user->password = bcrypt(123456);
-            $user->save();
-            Auth::login($user);
-        }
+
+        return redirect()->route('home');
+
+
+    } catch (Exception $e) {
+
+
+        return redirect('login/facebook');
+
 
     }
+
+    }
+
+
 }
