@@ -41,5 +41,6 @@ Route::get('/category/{category}', [
     'as'   => 'category'
 ]);
 
-Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
-Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('login/{provider}', 'SocialController@redirect');
+Route::get('login/{provider}/callback','SocialController@Callback');
+Route::get('login/twitter/callback', 'SocialController@TwitterCallback');

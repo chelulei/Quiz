@@ -88,4 +88,15 @@ CSS
             font-size: 13px;
         }
     }
+
+    /*input#search[type=text]{*/
+
+    #search input[type="text"] {
+
+        background-color: #4796CC; color: #ffffff;
+    }
+
+    #search  input:focus {
+        background-color: #ffffff;
+    }
 </style>

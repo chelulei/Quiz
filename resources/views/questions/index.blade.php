@@ -1,8 +1,6 @@
 @extends('layouts.main')
 
 @section('content')
-@section('style')
-    @endsection
    <div class="container">
        <div class="row pt-4">
            <div class="col-md-12">
