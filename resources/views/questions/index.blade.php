@@ -34,7 +34,7 @@
                         <div class="row">
                             <div class="col-lg-8 posts-list">
                                 @if (! $questions->count())
-                                    <div class="alert alert-danger">
+                                    <div class="alert alert-info">
                                         <strong>No record found</strong>
                                     </div>
                                 @else

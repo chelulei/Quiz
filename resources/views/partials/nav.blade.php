@@ -20,7 +20,7 @@
                 </a>
             </div>
                 <form class="my-auto d-inline w-50" action="{{ route('questions') }}">
-                        <div class="input-group">
+                        <div class="input-group" id="search">
                             <input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term"
                                    placeholder="Search for...">
                             <div class="input-group-append">
@@ -44,7 +44,7 @@
                     </li>
 
                     <li class="menu-has-children"><a href="">
-                            <img src="assets/img/user.png" class="profpic float-right rounded-circle" alt="Profile picture">
+                            <img src="{{ Auth::user()->image_url}}" class="profpic float-right rounded-circle" alt="Profile picture" width="30" height="30">
                         </a>
                         <ul>
                             <li><a  href="{{route('backend.account.index')}}">View Profile</a></li>

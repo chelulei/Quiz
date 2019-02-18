@@ -1,38 +1,37 @@
 @extends('layouts.layout')
 @section('content')
-    <header class="header header-inverse pt-150" style="background-color: #69BE00">
-        <div class="container text-center">
-
-            <div class="row">
-                <div class="col-12 col-lg-8 offset-lg-2">
-
-                    <h1>Latest Questions</h1>
-                    <p class="fs-20 opacity-70 pt-1">
-                        <a href="{{route('questions.create')}}" class="btn btn-primary">Ask Question</a>
-                    </p>
-
-                </div>
-            </div>
-
-        </div>
+    <header class="header header-inverse pt-100">
     </header>
+    <!-- Start post-content Area -->
     <section class="post-content-area">
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row mt-3">
+                <!-- Start of side bar -->
+                <div class="col-lg-3 sidebar-widgets">
+                    <div class="widget-wrap">
+                        @include('layouts.sidebar-left')
+                    </div>
+                </div>
+                <!-- End of side bar left -->
 
-                <div class="col-lg-8 posts-list">
+                <div class="col-lg-6 posts-list">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Latest Questions</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="{{route('questions.create')}}" class="btn btn-primary">Ask Question</a>
+                        </div>
+                    </div>
+                    <br>
                     @if (! $questions->count())
-                        <div class="alert alert-danger">
+                        <div class="alert alert-info">
                             <strong>No record found</strong>
                         </div>
                     @else
                         @include('questions.alert')
                         @foreach($questions as $question)
                             <div class="single-post row">
-                                <div class="col-lg-3  col-md-3 meta-details">
-                                </div>
-                                <div class="col-lg-9 col-md-9 ">
-
+                                <div class="col-lg-12 col-md-12 ">
                                     <a class="posts-title" href="{{$question->url}}"><h3>{{$question->title}}</h3></a>
                                     <p class="excert">
                                         {{$question->excerpt}}
@@ -73,9 +72,10 @@
                         </nav>
                     @endif
                 </div>
-                <div class="col-lg-4 sidebar-widgets">
+                <!-- Start of side bar left -->
+                <div class="col-lg-3 sidebar-widgets">
                     <div class="widget-wrap">
-                        @include('layouts.sidebar')
+                        @include('layouts.sidebar-right')
                     </div>
                 </div>
             </div>

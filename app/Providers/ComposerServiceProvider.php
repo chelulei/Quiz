@@ -22,7 +22,18 @@ class ComposerServiceProvider extends ServiceProvider
 
             return $view->with('categories', $categories);
         });
+
+        view()->composer('layouts.sidebar-left',function($view){
+
+            $categories= Category::with('questions')
+
+                ->orderBy('title','asc')->get();
+
+            return $view->with('categories', $categories);
+        });
     }
+
+
 //NavigationComposer::class
     /**
      * Register services.

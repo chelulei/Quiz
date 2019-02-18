@@ -8,7 +8,7 @@ use Illuminate\Http;
 use App\Question;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-
+use Auth;
 class HomeController extends Controller
 {
     public function __construct()
@@ -24,12 +24,14 @@ class HomeController extends Controller
     public function index()
     {
 
+        $user = Auth::user();
         $questions=Question::with('user')
             ->latestFirst()
             ->filter(request('term'))
             ->paginate($this->limit);
+        $categories= Category::all();
 
-        return view('home',compact('questions'));
+        return view('home',compact('questions','categories','user'));
 
     }
 

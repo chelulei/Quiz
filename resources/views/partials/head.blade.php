@@ -28,6 +28,7 @@ CSS
 <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/jquery-ui.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+<link href="{{asset('/assets/jasny-bootstrap/css/jasny-bootstrap.css')}}" rel="stylesheet" media="all">
 <style>
     .form-control-borderless {
         border: none;
@@ -93,7 +94,8 @@ CSS
 
     #search input[type="text"] {
 
-        background-color: #4796CC; color: #ffffff;
+        background-color: #4796CC;
+        /*color: #ffffff;*/
     }
 
     #search  input:focus {

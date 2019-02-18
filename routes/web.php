@@ -28,7 +28,7 @@ Route::post('/questions/{question}/favorites', 'FavoritesController@store')->nam
 Route::delete('/questions/{question}/favorites', 'FavoritesController@destroy')->name('questions.unfavorite');
 Route::post('/questions/{question}/vote', 'VoteQuestionController');
 Route::post('/answers/{answer}/vote', 'VoteAnswerController');
-
+Route::resource('/users', 'UsersController',['as'=>'backend']);
 Route::resource('/account', 'AccountController',['as'=>'backend']);
 Route::put('/profile/{user}', 'ProfileController@update')->name('profile.update');
 Route::get('/profile/{user}/edit', [
@@ -40,6 +40,12 @@ Route::get('/category/{category}', [
     'uses' => 'QuestionController@category',
     'as'   => 'category'
 ]);
+
+Route::get('/search/{search}', [
+    'uses' => 'QuestionController@category',
+    'as'   => 'search'
+]);
+
 
 Route::get('login/{provider}', 'SocialController@redirect');
 Route::get('login/{provider}/callback','SocialController@Callback');

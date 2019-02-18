@@ -17,9 +17,27 @@ class User extends Authenticatable
      */
     protected $fillable = [
 
-        'name', 'email', 'image', 'provider', 'provider_id', 'password',
+        'name', 'email', 'image', 'provider', 'provider_id', 'password'
 
     ];
+
+
+
+    public function getImageUrlAttribute($value){
+
+        $imageUrl="";
+
+        if(! is_null($this->image)){
+
+            $imagePath= public_path() . "/img/" . $this->image;
+
+            if(file_exists($imagePath))  $imageUrl = asset("img/" . $this->image);
+
+        }
+
+        return   $imageUrl;
+    }
+
 
     public function addNew($input)
     {

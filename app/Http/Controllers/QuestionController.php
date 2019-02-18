@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Category;
-use Illuminate\Htt;
+use Illuminate\Http;
 use App\Question;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -43,7 +43,27 @@ class QuestionController extends Controller
         return view('questions.index',compact('questions','categoryName'));
 
 
+
     }
+
+
+    public function search(Category $category)
+    {
+        /*title*/
+        $categoryName = $category->title;
+
+        $questions=$category
+            ->questions()
+            ->with('user')
+            ->latestFirst()
+            ->paginate($this->limit);
+        return view('questions.index',compact('questions','categoryName'));
+
+
+
+    }
+
+
 
     /**
      * Show the form for creating a new resource.

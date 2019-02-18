@@ -4,7 +4,17 @@
 
 @section('content')
     <div class="padding pt-150"></div>
-    <!-- /.padding -->
+    <div class="container">
+        <div class="row pt-4">
+
+            <div class="col-md-8 offset-1">
+                @include('flash::message')
+            </div>
+            <div class="col-sm-1"></div>
+            <!-- /.col-sm-2 -->
+            <!-- /.col-md-8 -->
+        </div>
+    </div>
     <div class="content mt-3">
         <div class="animated fadeIn vh-100">
             <div class="row">
@@ -19,22 +29,20 @@
                                 </div>
                                 <!-- /.col-md-12 -->
                                 <div class="col-md-3 col-lg-3 " align="center">
-                                    <img src="assets/img/default.png" class="img-thumbnail" alt="Profile picture">
+                                    <img src="{{$user->image_url}}" class="img-thumbnail" alt="Profile picture">
                                 </div>
 
                                 <!-- /.col-m-3 -->
                                 <div class="col-md-4 mt-2">
                                     Name: <strong>{{$user->name}}</strong><hr>
-                                    Date Of Birth: <strong></strong><hr>
-                                </div>
-                                <div class="col-md-4">
-                                    Telephone No: <strong></strong><hr>
                                     Email: <strong>{{$user->email}}</strong><hr>
+
                                 </div>
                             </div>
-
-                               <p class="text-center">
-                                   <button class="btn btn-lg btn-outline-primary">EDIT</button>
+                               <p class="pt-5">
+                                       <a href="{{ route('backend.users.edit',$user->id)}}" class="btn btn-sm btn-outline-primary">
+                                           EDIT DETAILS
+                                       </a>
                                </p>
 
                         </div>

@@ -13,6 +13,7 @@
 <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('assets/js/mail-script.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
+<script src="{{asset('/assets/jasny-bootstrap/js/jasny-bootstrap.js')}}"></script>
 
 <script>
     $(window).scroll(function() {
@@ -29,6 +30,6 @@
 
     $('#flash-overlay-modal').modal();
 
-    $('div.alert').not('.alert-important,.alert-info').delay(3000).fadeOut(350);
+    $('div.alert').not('.alert-important,.alert-info').delay(5000).fadeOut(350);
 
 </script>

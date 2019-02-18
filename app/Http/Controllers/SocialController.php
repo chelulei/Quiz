@@ -43,7 +43,7 @@ class SocialController extends Controller
             $user = User::firstOrCreate([
                 'name'          => $twitterSocial->getName(),
                 'email'         => $twitterSocial->getEmail(),
-//                'image'         => $twitterSocial->getAvatar(),
+                'image'         => $twitterSocial->getAvatar(),
                 'provider_id'   => $twitterSocial->getId(),
                 'provider'      => 'twitter',
             ]);
