@@ -1,6 +1,14 @@
 @extends('layouts.layout')
 @section('content')
     <header class="header header-inverse pt-100">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-md-12">
+                    @include('flash::message')
+                </div>
+                <!-- /.col-md-8 -->
+            </div>
+        </div>
     </header>
     <!-- Start post-content Area -->
     <section class="post-content-area">
@@ -19,7 +27,18 @@
                         <div class="card-body">
                             <h5 class="card-title">Latest Questions</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="{{route('questions.create')}}" class="btn btn-primary">Ask Question</a>
+                            <!-- Large modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                     <br>
@@ -81,7 +100,7 @@
             </div>
         </div>
     </section>
+
     <!-- End post-content Area -->
 @endsection
-
 

@@ -23,6 +23,7 @@ class ComposerServiceProvider extends ServiceProvider
             return $view->with('categories', $categories);
         });
 
+
         view()->composer('layouts.sidebar-left',function($view){
 
             $categories= Category::with('questions')
@@ -31,6 +32,7 @@ class ComposerServiceProvider extends ServiceProvider
 
             return $view->with('categories', $categories);
         });
+
     }
 
 

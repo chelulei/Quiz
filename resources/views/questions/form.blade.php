@@ -1,4 +1,5 @@
 @csrf
+{{  Form::hidden('url',URL::previous())  }}
 <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
     {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class' => 'form-control', 'placeholder' => 'Choose category']) !!}
 
@@ -23,5 +24,4 @@
 </div>
 <div class="box-footer">
     <button type="submit" class="btn btn-outline-primary">{{ $question->exists ? 'Update' : 'Ask Question' }}</button>
-    <a href="{{ route('questions.index') }}" class="btn btn-outline-danger">Cancel</a>
 </div>

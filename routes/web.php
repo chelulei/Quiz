@@ -41,9 +41,9 @@ Route::get('/category/{category}', [
     'as'   => 'category'
 ]);
 
-Route::get('/search/{search}', [
-    'uses' => 'QuestionController@category',
-    'as'   => 'search'
+Route::get('/cat/{id}', [
+    'uses' => 'HomeController@cat',
+    'as'   => 'category.home'
 ]);
 
 

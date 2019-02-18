@@ -15,8 +15,8 @@
                         <div class="d-flex align-items-center">
                             <h2> Ask question</h2>
                             <div class="ml-auto">
-                                <a href="{{route('questions.index')}}" class="btn btn-outline-primary">
-                                   <i class="fa fa-arrow-left"></i> Back To all Questions
+                                <a href="{{ url()->previous() }}" class="btn btn-outline-primary">
+                                   <i class="fa fa-arrow-left"></i> Back
                                 </a>
                             </div><!-- /.ml-auto -->
                         </div>

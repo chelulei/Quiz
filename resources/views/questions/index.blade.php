@@ -19,7 +19,9 @@
                 <!-- /.col-md-4 -->
                 <div class="col-md-2">
                     <div class="ml-auto">
-                        <a href="{{route('questions.create')}}" class="btn btn-primary">Ask Question</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-plus"></i> Ask Question
+                        </button>
                     </div>
                 </div>
                 <!-- /.col-md-4 -->
@@ -113,6 +115,7 @@
                     </div>
                 </section>
                 <!-- End post-content Area -->
+   @include('partials.modals')
       @endsection
 
 

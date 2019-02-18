@@ -37,15 +37,15 @@ class CategoriesTableSeeder extends Seeder
             ],
         ]);
 
-        // update the posts data
-        foreach (Question::pluck('id') as $qztId)
-        {
-            $categories = Category::pluck('id');
-            $categoryId = $categories[rand(0, $categories->count()-1)];
-
-            DB::table('questions')
-                ->where('id', $qztId)
-                ->update(['category_id' => $categoryId]);
-        }
+//        // update the posts data
+//        foreach (Question::pluck('id') as $qztId)
+//        {
+//            $categories = Category::pluck('id');
+//            $categoryId = $categories[rand(0, $categories->count()-1)];
+//
+//            DB::table('questions')
+//                ->where('id', $qztId)
+//                ->update(['category_id' => $categoryId]);
+//        }
     }
 }

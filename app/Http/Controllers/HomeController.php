@@ -36,4 +36,22 @@ class HomeController extends Controller
     }
 
 
+    public function cat($id)
+    {
+        /*title*/
+        $categoryName = Category::findOrFail($id)->title;
+        $category = Category::with('questions')->get();
+        $questions=Question::with('user')
+            ->where('category_id',$id)
+            ->latestFirst()
+            ->paginate($this->limit);
+        return view('home',compact('questions','category','categoryName'));
+
+
+
+    }
+
+
+
+
 }

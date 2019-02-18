@@ -3,7 +3,7 @@
 <head>
     @include('partials.head')
     @yield('style')
-    <script src="{{asset('/assets/tinymce/plugin/tinymce/tinymce.min.js')}}"></script>
+    <script src="{{asset('/assets/vendor/tinymce/plugin/tinymce/tinymce.min.js')}}"></script>
     <script>tinymce.init({
             selector:'textarea',
             menubar:'false'

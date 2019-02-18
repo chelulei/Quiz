@@ -23,13 +23,19 @@ CSS
 <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/jquery-ui.css')}}">
-<link rel="stylesheet" href="{{asset('assets/css/nice-select.css')}}">
+<link href="{{asset('/assets/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
+{{--<link rel="stylesheet" href="{{asset('assets/css/nice-select.css')}}">--}}
 <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/jquery-ui.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
-<link href="{{asset('/assets/jasny-bootstrap/css/jasny-bootstrap.css')}}" rel="stylesheet" media="all">
+<link href="{{asset('/assets/vendor/jasny-bootstrap/css/jasny-bootstrap.css')}}" rel="stylesheet" media="all">
 <style>
+
+    #bigdrop {
+        width: 600px !important;
+    }
+
     .form-control-borderless {
         border: none;
     }

@@ -5,7 +5,7 @@
             @foreach($categories as $category)
             <li>
                 <a href="{{ route('category', $category->slug) }}" class="d-flex justify-content-between">
-                    <p>{{ $category->title }}</p>
+                    <p class="ali">{{ $category->title }}</p>
                 </a>
             </li>
             @endforeach

@@ -30,10 +30,6 @@
                         <input type="hidden" name="vote" value="-1">
                     </form>
 
-                    {{--<a href="" title="Mark this answer as the best  answer"  class="vote-accepted mt-2">--}}
-                    {{--<i class="fa fa-check fa-2x" aria-hidden="true"></i>--}}
-                    {{--</a>--}}
-
                     @can('accept',$answer)
 
                     <a  href="" title="Mark this answer as the best  answer"  class="{{$answer->status}} mt-2"
