@@ -9,7 +9,7 @@ class Question extends Model
     //
     use VotableTrait;
 
-    protected $fillable = ['category_id','title','body'];
+    protected $fillable = ['category_id','title','body','user_id'];
 
     protected  $perPage =5;
 

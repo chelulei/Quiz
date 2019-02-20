@@ -10,6 +10,7 @@
 <meta name="keywords" content="">
 <!-- meta character set -->
 <meta charset="UTF-8">
+<meta name="_token" content="{{csrf_token()}}" />
 <!-- Site Title -->
 <title>Pride</title>
 
@@ -107,4 +108,6 @@ CSS
     #search  input:focus {
         background-color: #ffffff;
     }
+
+
 </style>

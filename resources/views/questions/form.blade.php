@@ -1,5 +1,5 @@
 @csrf
-{{  Form::hidden('url',URL::previous())  }}
+
 <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
     {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class' => 'form-control', 'placeholder' => 'Choose category']) !!}
 

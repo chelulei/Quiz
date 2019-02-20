@@ -2,7 +2,7 @@
 @section('content')
     <header class="header header-inverse pt-100">
         <div class="container">
-            <div class="row pt-4">
+            <div class="row pt-2">
                 <div class="col-md-12">
                     @include('flash::message')
                 </div>
@@ -12,36 +12,22 @@
     </header>
     <!-- Start post-content Area -->
     <section class="post-content-area">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row mt-3">
-                <!-- Start of side bar -->
-                <div class="col-lg-3 sidebar-widgets">
-                    <div class="widget-wrap">
-                        @include('layouts.sidebar-left')
-                    </div>
+                <div class="col-lg-2">
+                    @include('layouts.sidebar-left')
                 </div>
                 <!-- End of side bar left -->
-
-                <div class="col-lg-6 posts-list">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">Latest Questions</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <!-- Large modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        ...
-                                    </div>
-                                </div>
+                <div class="col-lg-7 posts-list">
+                    <div class="single-post row card p-5">
+                        <div class="col-lg-12 col-md-12 ">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="open">Open Modal</button>
                             </div>
-
-
                         </div>
                     </div>
-                    <br>
                     @if (! $questions->count())
                         <div class="alert alert-info">
                             <strong>No record found</strong>
@@ -49,7 +35,7 @@
                     @else
                         @include('questions.alert')
                         @foreach($questions as $question)
-                            <div class="single-post row">
+                            <div class="single-post row card pb-4">
                                 <div class="col-lg-12 col-md-12 ">
                                     <a class="posts-title" href="{{$question->url}}"><h3>{{$question->title}}</h3></a>
                                     <p class="excert">
@@ -71,12 +57,8 @@
                                     <ul class="list-inline">
                                         <li class="list-inline-item"><i class="fa fa-user"></i><a href="{{$question->user->url}}"> {{$question->user->name}}</a></li>
                                         <li class="list-inline-item"><i class="fa fa-clock-o"></i> {{$question->date}}</li>
-                                        <li class="list-inline-item"><i class="fa fa-comments"></i>
-                                            <a href="{{$question->url}}">
-                                                <span class="badge badge-info">Answer</span>
-                                            </a>
-                                        </li>
                                     </ul>
+                                    <h3><a href="{{$question->url}}"> <span class="float-lg-right badge badge-info">Answer</span></a></h3>
                                     </p>
 
                                     <a href="{{$question->url}}" class="primary-btn">Read More</a>
@@ -100,7 +82,7 @@
             </div>
         </div>
     </section>
-
+    @include('partials.modals')
     <!-- End post-content Area -->
 @endsection
 

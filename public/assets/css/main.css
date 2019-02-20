@@ -92,9 +92,9 @@ $black			: #222;
 }
 
 body {
-  color: #777777;
+  color:#000000;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
@@ -2047,6 +2047,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-top a {
   color: #fff;
+
 }
 
 .header-top ul li {
@@ -2084,6 +2085,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 20px;
 }
 
+
 #header {
   position: fixed;
   left: 0;
@@ -2091,12 +2093,13 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: rgba(255, 255, 255, 0.2);
+  background: #56B3F9;
 }
+
 
 #header.header-scrolled {
   transition: all 0.5s;
-  background-color: rgba(22, 118, 183, 0.9);
+  background-color: #3180F8;
 }
 
 #header.header-scrolled .main-menu {
@@ -3563,7 +3566,7 @@ dl.toggle.time-line:before {
 }
 
 .blog-home-banner .overlay-bg {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(98, 147, 241, 0.5);
 }
 
 .blog-page {
@@ -3670,11 +3673,11 @@ dl.toggle.time-line:before {
 
 .post-content-area .single-post .meta-details .tags li {
   display: inline-block;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .post-content-area .single-post .meta-details .tags li a {
-  color: #222;
+  color: #000000;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;

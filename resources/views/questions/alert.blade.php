@@ -5,7 +5,7 @@
         </div>
     @endif
     @if ($term=request('term'))
-        <div class="alert alert-info">
+        <div class="alert alert-info mt-3">
             <p>Search Results For: <strong>{{ $term }}</strong></p>
         </div>
     @endif

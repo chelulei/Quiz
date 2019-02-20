@@ -1,40 +1,21 @@
 @extends('layouts.main')
 
 @section('content')
-   <div class="container">
-       <div class="row pt-4">
-           <div class="col-md-12">
-               @include('flash::message')
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-12">
+                       @include('flash::message')
+                   </div>
+                   <!-- /.col-md-8 -->
+               </div>
            </div>
-           <!-- /.col-md-8 -->
-       </div>
-   </div>
    <!-- /.container -->
-    <section class="top-category-widget-area pt-30 pb-30 ">
-        <div class="container">
-            <div class="row mt-2">
-                <div class="col-md-8 offset-2">
-                    <h2> All questions</h2>
-                </div>
-                <!-- /.col-md-4 -->
-                <div class="col-md-2">
-                    <div class="ml-auto">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa fa-plus"></i> Ask Question
-                        </button>
-                    </div>
-                </div>
-                <!-- /.col-md-4 -->
-            </div>
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.row -->
+
                 <!-- Start post-content Area -->
-                <section class="post-content-area">
+                <section class="post-content-area  pb-20">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-8 posts-list">
+                            <div class="col-lg-8 posts-list card">
                                 @if (! $questions->count())
                                     <div class="alert alert-info">
                                         <strong>No record found</strong>
@@ -87,17 +68,16 @@
                                             <li class="list-inline-item"><i class="fa fa-user"></i><a href="{{$question->user->url}}"> {{$question->user->name}}</a></li>
                                             <li class="list-inline-item"><i class="fa fa-clock-o"></i> {{$question->date}}</li>
                                             <li class="list-inline-item"><i class="fa fa-comments"></i>
-                                                <a href="{{$question->url}}">
-                                                    <span class="badge badge-info">Answer</span>
-                                                    </a>
                                             </li>
                                         </ul>
+                                        <h3><a href="{{$question->url}}"> <span class="float-lg-right badge badge-info">Answer</span></a></h3>
                                         </p>
 
                                         <a href="{{$question->url}}" class="primary-btn">Read More</a>
 
                                     </div>
                                 </div>
+                                    <hr>
                                 @endforeach
                                 <nav class="blog-pagination justify-content-center d-flex">
                                     <ul class="pagination">
@@ -107,7 +87,7 @@
                                     @endif
                             </div>
                             <div class="col-lg-4 sidebar-widgets">
-                                <div class="widget-wrap">
+                                <div class="widget-wrap card ">
                               @include('layouts.sidebar')
                                 </div>
                             </div>

@@ -5,6 +5,9 @@ use Illuminate\Http;
 use App\Question;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Validator;
+use Response;
+use Auth;
 class QuestionController extends Controller
 {
     public function __construct()
@@ -23,7 +26,8 @@ class QuestionController extends Controller
             ->latestFirst()
             ->filter(request('term'))
             ->paginate($this->limit);
-        return view('questions.index',compact('questions'));
+        $categories=Category::all();
+        return view('questions.index',compact('questions','categories'));
     }
     public function category(Category $category)
     {
@@ -64,32 +68,39 @@ class QuestionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Requests $request)
+
+    public function store(Request $request)
     {
-        //
-//        $request->user()->questions()->create($request->all());
-//        flash('Question has been submitted!','success');
-//        return back();
+
 
         $validator = \Validator::make($request->all(), [
-            'category_id' => 'required',
-            'title' => 'required|max:255',
+            'category' => 'required',
+            'title' => 'required',
             'body' => 'required',
+
         ]);
 
         if ($validator->fails())
         {
             return response()->json(['errors'=>$validator->errors()->all()]);
         }
-        $question= new Question();
-        $question->category_id=$request->get('category_id');
+
+        $id = Auth::user()->id;
+        $question = new Question;
+        $question->category_id=$request->get('category');
         $question->title=$request->get('title');
         $question->body=$request->get('body');
+        $question->user_id=$id;
         $question->save();
 
-        return response()->json(['success'=>'Question is successfully added']);
+        flash('Question has been Submitted successfully','danger');
+
+        return back();
 
     }
+
+
+
     /**
      * Display the specified resource.
      *

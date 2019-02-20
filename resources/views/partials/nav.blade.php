@@ -24,7 +24,7 @@
                             <input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term"
                                    placeholder="Search for...">
                             <div class="input-group-append">
-                                <button  class="btn btn-info" type="submit">
+                                <button  class="btn btn-primary" type="submit">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </div>
