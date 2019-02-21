@@ -69,35 +69,28 @@ class QuestionController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function store(Request $request)
+    public function store(Requests\AskQuestionRequest $request)
     {
-
-
-        $validator = \Validator::make($request->all(), [
-            'category' => 'required',
-            'title' => 'required',
-            'body' => 'required',
-
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'email' => 'required|email|max:255|unique:users',
+            'password' => 'required|min:6|confirmed',
         ]);
 
-        if ($validator->fails())
-        {
-            return response()->json(['errors'=>$validator->errors()->all()]);
+//        $input = $request->all();
+
+        if ($validator->fails()) {
+
+            // Store your user in database
+            return Response::json(['errors' => $validator->errors()]);
+        }else{
+            return Response::json(['success' => '1']);
         }
 
-        $id = Auth::user()->id;
-        $question = new Question;
-        $question->category_id=$request->get('category');
-        $question->title=$request->get('title');
-        $question->body=$request->get('body');
-        $question->user_id=$id;
-        $question->save();
 
-        flash('Question has been Submitted successfully','danger');
-
-        return back();
 
     }
+
 
 
 

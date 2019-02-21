@@ -31,7 +31,7 @@
 </section>
 <!-- End banner Area -->
 <!-- Start top-category-widget Area -->
-<section class="top-category-widget-area pt-20 pb-20">
+<section class="top-category-widget-area pt-20 pb-20" style="background-color: #EBF2F7;">
     <div class="container">
         <div class="row">
             <nav class="nav">

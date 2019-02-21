@@ -1,42 +1,58 @@
-<form method="post" action="{{url('questions')}}" id="form">
-@csrf
-<!-- Modal -->
-    <div class="modal" tabindex="-1" role="dialog" id="myModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="alert alert-danger" style="display:none"></div>
-                <div class="modal-header">
+<div id="SignUp" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-                    <h5 class="modal-title">Uefa Champion League</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                            <label for="category">Category:</label>
-                            <input type="text" class="form-control" name="category" id="category">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                            <label for="Title">Title:</label>
-                            <input type="text" class="form-control" name="title" id="title">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                            <label for="body">Explain Your Question:</label>
-                            <input type="text" class="form-control" name="body" id="body">
-                        </div>
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3 class="modal-title text-center primecolor">Sign Up</h3>
+            </div>
+            <div class="modal-body" style="overflow: hidden;">
+                <div id="success-msg" class="hide">
+                    <div class="alert alert-info alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong>Success!</strong> Check your mail for login confirmation!!
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button  class="btn btn-success" id="ajaxSubmit">Save changes</button>
+                <div class="col-md-offset-1 col-md-10">
+                    <form method="POST" id="Register">
+                        {{ csrf_field() }}
+                        <div class="form-group has-feedback">
+                            <input type="text" name="name" value="{{ old('name') }}" class="form-control" placeholder="Full name">
+                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                            <span class="text-danger">
+                                <strong id="name-error"></strong>
+                            </span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Email">
+                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                            <span class="text-danger">
+                                <strong id="email-error"></strong>
+                            </span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                            <span class="text-danger">
+                                <strong id="password-error"></strong>
+                            </span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="password" name="password_confirmation" class="form-control" placeholder="Retype password">
+                            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <button type="button" id="submitForm" class="btn btn-primary btn-prime white btn-flat">Register</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+
     </div>
-</form>
+</div>

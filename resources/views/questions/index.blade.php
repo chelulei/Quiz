@@ -12,10 +12,10 @@
    <!-- /.container -->
 
                 <!-- Start post-content Area -->
-                <section class="post-content-area  pb-20">
+                <section class="post-content-area  pb-20" style="background-color: #EBF2F7">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 posts-list card">
+                        <div class="row ">
+                            <div class="col-lg-8 posts-list card mt-3">
                                 @if (! $questions->count())
                                     <div class="alert alert-info">
                                         <strong>No record found</strong>
@@ -86,7 +86,7 @@
                                 </nav>
                                     @endif
                             </div>
-                            <div class="col-lg-4 sidebar-widgets">
+                            <div class="col-lg-4 sidebar-widgets mt-3">
                                 <div class="widget-wrap card ">
                               @include('layouts.sidebar')
                                 </div>

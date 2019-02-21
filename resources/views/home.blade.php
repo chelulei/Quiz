@@ -1,8 +1,8 @@
 @extends('layouts.layout')
 @section('content')
-    <header class="header header-inverse pt-100">
+    <header class="header header-inverse pt-80">
         <div class="container">
-            <div class="row pt-2">
+            <div class="row">
                 <div class="col-md-12">
                     @include('flash::message')
                 </div>
@@ -11,20 +11,22 @@
         </div>
     </header>
     <!-- Start post-content Area -->
-    <section class="post-content-area">
+    <section class="post-content-area" style="background-color: #EBF2F7;">
         <div class="container">
-            <div class="row mt-3">
+            <div class="row">
                 <div class="col-lg-2">
                     @include('layouts.sidebar-left')
                 </div>
                 <!-- End of side bar left -->
-                <div class="col-lg-7 posts-list">
+                <div class="col-lg-7 posts-list mt-3">
                     <div class="single-post row card p-5">
                         <div class="col-lg-12 col-md-12 ">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="open">Open Modal</button>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#SignUp">Register</a>
+                                </li>
                             </div>
                         </div>
                     </div>
@@ -74,7 +76,7 @@
                     @endif
                 </div>
                 <!-- Start of side bar left -->
-                <div class="col-lg-3 sidebar-widgets">
+                <div class="col-lg-3 sidebar-widgets mt-3">
                     <div class="widget-wrap">
                         @include('layouts.sidebar-right')
                     </div>
@@ -85,4 +87,5 @@
     @include('partials.modals')
     <!-- End post-content Area -->
 @endsection
+
 

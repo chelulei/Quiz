@@ -1,7 +1,5 @@
-@csrf
-
 <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
-    {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class' => 'form-control', 'placeholder' => 'Choose category']) !!}
+    {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class' => 'form-control', 'placeholder' => 'Choose category','required']) !!}
 
     @if($errors->has('category_id'))
         <span class="help-block">{{ $errors->first('category_id') }}</span>
@@ -9,7 +7,7 @@
 </div>
 <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
     {!! Form::label('title','Qestion Title') !!}
-    {!! Form::text('title', null, ['class' => 'form-control','id' => 'question-title',]) !!}
+    {!! Form::text('title', null, ['class' => 'form-control','id' => 'question-title', 'required']) !!}
 
     @if($errors->has('title'))
         <span class="help-block">{{ $errors->first('title') }}</span>
@@ -21,7 +19,4 @@
     @if($errors->has('body'))
         <span class="help-block">{{ $errors->first('body') }}</span>
     @endif
-</div>
-<div class="box-footer">
-    <button type="submit" class="btn btn-outline-primary">{{ $question->exists ? 'Update' : 'Ask Question' }}</button>
 </div>
