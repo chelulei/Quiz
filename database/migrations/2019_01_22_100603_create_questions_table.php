@@ -20,7 +20,9 @@ class CreateQuestionsTable extends Migration
                 ->on('categories')->onDelete('restrict');
             $table->string('title');
             $table->string('slug')->unique();
-            $table->text('body');
+            $table->string('meta_title')->nullable();
+            $table->string('meta_description')->nullable();
+            $table->longText('body');
             $table->unsignedInteger('views')->default(0);
             $table->unsignedInteger('answers_count')->default(0);
             $table->integer('votes_count')->default(0);

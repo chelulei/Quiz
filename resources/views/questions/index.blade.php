@@ -1,8 +1,9 @@
 @extends('layouts.main')
-
+@include('partials.meta_static')
 @section('content')
+    @include('partials.tinymce')
            <div class="container">
-               <div class="row">
+               <div class="row mt-2">
                    <div class="col-md-12">
                        @include('flash::message')
                    </div>
@@ -16,8 +17,20 @@
                     <div class="container">
                         <div class="row ">
                             <div class="col-lg-8 posts-list card mt-3">
+                                <div class="single-post row card m-5">
+                                    <div class="col-lg-12 col-md-12 ">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Whats your questions?</h5>
+                                            <p class="card-text">Ask Any Squestion.</p>
+                                            <a href="{{route('questions.create')}}" class="btn btn-primary">
+                                                <i class="fa fa-plus"></i>
+                                                  ASk Questions
+                                             </a>
+                                        </div>
+                                    </div>
+                                </div>
                                 @if (! $questions->count())
-                                    <div class="alert alert-info">
+                                    <div class="alert alert-info mt-2">
                                         <strong>No record found</strong>
                                     </div>
                                 @else

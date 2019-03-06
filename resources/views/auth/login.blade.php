@@ -3,9 +3,11 @@
 
     <div class="login-content">
         <div class="login-logo">
-            <a href="/questions">
-                <img class="align-content" src="backend/images/logo.png" alt="">
-            </a>
+            <h3>
+                <a href="/questions" class="text-white">
+                {{--<img class="align-content" src="backend/images/logo.png" alt="">--}}
+                Pride
+                </a></h3>
             {{--<h5 class="text-uppercase text-center">{{ __('Login') }}</h5>--}}
         </div>
         <div class="login-form">

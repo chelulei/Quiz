@@ -15,7 +15,7 @@
 </div>
 <div class="form-group {{ $errors->has('body') ? 'has-error' : '' }}">
     {!! Form::label('body','Explain your Question') !!}
-    {!! Form::textarea('body', null, ['class' => 'form-control','rows' => 5, 'cols' =>5]) !!}
+    {!! Form::textarea('body', null, ['class' => 'form-control my-editor','rows' => 5, 'cols' =>5]) !!}
     @if($errors->has('body'))
         <span class="help-block">{{ $errors->first('body') }}</span>
     @endif

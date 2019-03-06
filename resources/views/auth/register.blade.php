@@ -7,9 +7,10 @@
         <div class="container">
             <div class="login-content">
                 <div class="login-logo">
-                    <a href="/questions">
-                        <img class="align-content" src="backend/images/logo.png" alt="">
-                    </a>
+                    {{--<a href="/questions">--}}
+                        {{--<img class="align-content" src="backend/images/logo.png" alt="">--}}
+                    {{--</a>--}}
+                    <h2><a href="/questions" class="text-white">Pride</a></h2>
                 </div>
                 <div class="login-form">
                     <form class="form-type-material" method="POST" action="{{ route('register') }}">

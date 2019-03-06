@@ -1,48 +1,13 @@
 <div class="single-sidebar-widget post-category-widget">
-    <h4 class="category-title">Post Catgories</h4>
+    <h4 class="category-title">All Subjects</h4>
     <ul class="cat-list">
-        <li>
-            <a href="#" class="d-flex justify-content-between">
-                <p>Technology</p>
-                <p>37</p>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="d-flex justify-content-between">
-                <p>Lifestyle</p>
-                <p>24</p>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="d-flex justify-content-between">
-                <p>Fashion</p>
-                <p>59</p>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="d-flex justify-content-between">
-                <p>Art</p>
-                <p>29</p>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="d-flex justify-content-between">
-                <p>Food</p>
-                <p>15</p>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="d-flex justify-content-between">
-                <p>Architecture</p>
-                <p>09</p>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="d-flex justify-content-between">
-                <p>Adventure</p>
-                <p>44</p>
-            </a>
-        </li>
+        @foreach($categories as $category)
+            <li>
+                <a href="{{ route('category.home',$category->id)}}" class="d-flex justify-content-between">
+                    <p>{{$category->title }}</p>
+                </a>
+            </li>
+        @endforeach
     </ul>
 </div>
 <div class="single-sidebar-widget newsletter-widget">

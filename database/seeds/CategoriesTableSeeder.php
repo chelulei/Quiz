@@ -16,24 +16,53 @@ class CategoriesTableSeeder extends Seeder
         //
         DB::table('categories')->insert([
             [
-                'title' => 'math',
+                'title' => 'Math',
                 'slug' => 'math'
             ],
             [
-                'title' => 'english',
+                'title' => 'English',
                 'slug' => 'english'
             ],
             [
-                'title' => 'swahili',
-                'slug' => 'swahili'
-            ],
-            [
-                'title' => 'physics',
+                'title' => 'Physics',
                 'slug' => 'physics'
             ],
             [
-                'title' => 'Freebies',
-                'slug' => 'freebies'
+                'title' => 'Physics',
+                'slug' => 'physics'
+            ],
+            [
+                'title' => 'Physics',
+                'slug' => 'physics'
+            ],
+            [
+                'title' => 'Chemistry',
+                'slug' => 'chemistry'
+            ],
+            [
+                'title' => 'Biology',
+                'slug' => 'biology'
+            ],
+
+            [
+                'title' => 'History',
+                'slug' => 'history'
+            ],
+            [
+                'title' => 'Economics',
+                'slug' => 'economics'
+            ],
+            [
+                'title' => 'Health',
+                'slug' => 'health'
+            ],
+            [
+                'title' => 'Computer Science',
+                'slug' => 'computer'
+            ],
+            [
+                'title' => 'Physical Education',
+                'slug' => 'physical'
             ],
         ]);
 

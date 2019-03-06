@@ -71,25 +71,18 @@ class QuestionController extends Controller
 
     public function store(Requests\AskQuestionRequest $request)
     {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
-        ]);
 
-//        $input = $request->all();
+        $input = $request->all();
+        $input['meta_title'] = str_limit($request->body, 55);
+        $input['meta_description'] = str_limit($request->body, 155);
+        $request->user()->questions()->create($input);
 
-        if ($validator->fails()) {
-
-            // Store your user in database
-            return Response::json(['errors' => $validator->errors()]);
-        }else{
-            return Response::json(['success' => '1']);
-        }
-
-
+        flash('Question has been submitted successfully','success');
+        return back();
 
     }
+
+
 
 
 
@@ -104,7 +97,8 @@ class QuestionController extends Controller
     {
         //
         $question->increment('views');
-        return view("questions.show", compact('question'));
+        $categories=Category::all();
+        return view("questions.show", compact('question','categories'));
     }
     /**
      * Show the form for editing the specified resource.
@@ -129,7 +123,7 @@ class QuestionController extends Controller
         //
         $this->authorize("update",$question);
         $question->update($request->only('title','body'));
-        flash('Question has been Update','danger');
+        flash('Question has been Update','success');
         return back();
     }
     /**

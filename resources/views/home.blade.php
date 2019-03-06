@@ -1,8 +1,9 @@
 @extends('layouts.layout')
 @section('content')
+    @include('partials.tinymce')
     <header class="header header-inverse pt-80">
         <div class="container">
-            <div class="row">
+            <div class="row mt-2">
                 <div class="col-md-12">
                     @include('flash::message')
                 </div>
@@ -15,18 +16,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    @include('layouts.sidebar-left')
+                        @include('layouts.sidebar-left')
                 </div>
                 <!-- End of side bar left -->
                 <div class="col-lg-7 posts-list mt-3">
                     <div class="single-post row card p-5">
                         <div class="col-lg-12 col-md-12 ">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <li>
-                                    <a href="#" data-toggle="modal" data-target="#SignUp">Register</a>
-                                </li>
+                                <h5 class="card-title">Whats your questions?</h5>
+                                <p class="card-text">Ask Any Squestion.</p>
+
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">
+                                        <i class="fa fa-plus"></i>
+                                        Questions
+                                    </button>
                             </div>
                         </div>
                     </div>
@@ -86,6 +89,7 @@
     </section>
     @include('partials.modals')
     <!-- End post-content Area -->
+
 @endsection
 
 

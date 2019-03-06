@@ -3,11 +3,6 @@
 <head>
     @include('partials.head')
     @yield('style')
-    <script src="{{asset('/assets/vendor/tinymce/plugin/tinymce/tinymce.min.js')}}"></script>
-    <script>tinymce.init({
-            selector:'textarea',
-            menubar:'false'
-        });</script>
 </head>
 
 <body>

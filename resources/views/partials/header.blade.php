@@ -15,29 +15,27 @@
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
                 <a href="index.html">
-                    logo
+                    <h3 class="text-white">Pride</h3>
                     {{--<img src="img/logo.png" alt="" title="" />--}}
                 </a>
             </div>
-            <form class="my-auto d-inline w-50" action="{{ route('questions') }}">
-                    <div class="search">
-                        <div class="input-group" id="search">
-                            <input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term"
-                                   placeholder="Search for...">
-                            <div class="input-group-append">
-                                <button  class="btn btn-primary" type="submit">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.search -->
-                </form>
+            {{--<form class="my-auto d-inline w-50" action="{{ route('questions') }}">--}}
+                    {{--<div class="search">--}}
+                        {{--<div class="input-group" id="search">--}}
+                            {{--<input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term"--}}
+                                   {{--placeholder="Search for...">--}}
+                            {{--<div class="input-group-append">--}}
+                                {{--<button  class="btn btn-primary" type="submit">--}}
+                                    {{--<i class="fa fa-search"></i>--}}
+                                {{--</button>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<!-- /.search -->--}}
+                {{--</form>--}}
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
                     @if (Route::has('login'))
                         @auth
                             <li class="nav-item active">

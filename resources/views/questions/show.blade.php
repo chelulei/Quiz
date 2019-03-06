@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@include('partials.meta_dynamic')
 @section('content')
     <div class="container">
         <div class="row justify-content-center mt-100">

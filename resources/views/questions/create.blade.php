@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
+    @include('partials.tinymce')
     <div class="container">
         <div class="row mt-150">
             <div class="col-md-12">
@@ -35,7 +36,6 @@
                         @include('questions.form')
 
                         {!! Form::close() !!}
-
                     </div>
                 </div>
             </div>

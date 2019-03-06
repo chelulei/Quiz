@@ -1,58 +1,46 @@
-<div id="SignUp" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
+<div class="modal fade" id="modal" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">×</button>
-                <h3 class="modal-title text-center primecolor">Sign Up</h3>
+                <h5 class="modal-title" id="exampleModalLabel">ADD ITEMS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="modal-body" style="overflow: hidden;">
-                <div id="success-msg" class="hide">
-                    <div class="alert alert-info alert-dismissible fade in" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <strong>Success!</strong> Check your mail for login confirmation!!
-                    </div>
-                </div>
-                <div class="col-md-offset-1 col-md-10">
-                    <form method="POST" id="Register">
-                        {{ csrf_field() }}
-                        <div class="form-group has-feedback">
-                            <input type="text" name="name" value="{{ old('name') }}" class="form-control" placeholder="Full name">
-                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                            <span class="text-danger">
-                                <strong id="name-error"></strong>
-                            </span>
-                        </div>
-                        <div class="form-group has-feedback">
-                            <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Email">
-                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-                            <span class="text-danger">
-                                <strong id="email-error"></strong>
-                            </span>
-                        </div>
-                        <div class="form-group has-feedback">
-                            <input type="password" name="password" class="form-control" placeholder="Password">
-                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                            <span class="text-danger">
-                                <strong id="password-error"></strong>
-                            </span>
-                        </div>
-                        <div class="form-group has-feedback">
-                            <input type="password" name="password_confirmation" class="form-control" placeholder="Retype password">
-                            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 text-center">
-                                <button type="button" id="submitForm" class="btn btn-primary btn-prime white btn-flat">Register</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+            <form method="POST" action="{{route('questions.store')}}">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
+                        {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class' => 'form-control', 'placeholder' => 'Choose category','required']) !!}
 
+                        @if($errors->has('category_id'))
+                            <span class="help-block">{{ $errors->first('category_id') }}</span>
+                        @endif
+                    </div>
+                    <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
+                        {!! Form::label('title','Qestion Title') !!}
+                        {!! Form::text('title', null, ['class' => 'form-control','id' => 'question-title', 'required']) !!}
+
+                        @if($errors->has('title'))
+                            <span class="help-block">{{ $errors->first('title') }}</span>
+                        @endif
+                    </div>
+                    <div class="form-group {{ $errors->has('body') ? 'has-error' : '' }}">
+                        {!! Form::label('body','Explain your Question') !!}
+                        {!! Form::textarea('body', null, ['class' => 'form-control my-editor','rows' => 5, 'cols' =>5]) !!}
+                        @if($errors->has('body'))
+                            <span class="help-block">{{ $errors->first('body') }}</span>
+                        @endif
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i>Close</button>
+                    <button type="submit"   class="btn btn-primary"><i class="fa fa-save"></i>Save </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

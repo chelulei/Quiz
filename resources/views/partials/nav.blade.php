@@ -36,12 +36,12 @@
                         <li><a href="{{route('questions.index')}}">Blog</a></li>
 
                 <!-- #notifications -->
-                    <li class="menu-has-children"><a href=""> <i class="fa fa-bell"></i></a>
-                        <ul>
-                            <li><a href="#">loremm</a></li>
-                            <li><a href="#">loremm</a></li>
-                        </ul>
-                    </li>
+                    {{--<li class="menu-has-children"><a href=""> <i class="fa fa-bell"></i></a>--}}
+                        {{--<ul>--}}
+                            {{--<li><a href="#">loremm</a></li>--}}
+                            {{--<li><a href="#">loremm</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
 
                     <li class="menu-has-children"><a href="">
                             <img src="{{ Auth::user()->image_url}}" class="profpic float-right rounded-circle" alt="Profile picture" width="30" height="30">

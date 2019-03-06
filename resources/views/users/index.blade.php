@@ -1,7 +1,5 @@
 @extends('layouts.backend.main')
-
-@section('title', 'Norsu Clinic | Users index')
-
+@section('title', 'Users index')
 @section('content')
     <div class="breadcrumbs">
             <div class="page-header float-left pl-2">
