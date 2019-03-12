@@ -24,16 +24,16 @@ class CategoriesTableSeeder extends Seeder
                 'slug' => 'english'
             ],
             [
-                'title' => 'Physics',
-                'slug' => 'physics'
+                'title' => 'Music',
+                'slug' => 'music'
             ],
             [
                 'title' => 'Physics',
                 'slug' => 'physics'
             ],
             [
-                'title' => 'Physics',
-                'slug' => 'physics'
+                'title' => 'Art',
+                'slug' => 'art'
             ],
             [
                 'title' => 'Chemistry',

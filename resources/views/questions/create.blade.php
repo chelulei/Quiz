@@ -29,7 +29,6 @@
                                           'method' => 'POST',
                                           'route'  => 'questions.store',
                                           'files'  => TRUE,
-                                          'id' => 'question-form',
                                           'class'=>'class="was-validated'
                                       ]) !!}
 

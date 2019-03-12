@@ -9,7 +9,7 @@ class Question extends Model
     //
     use VotableTrait;
 
-    protected $fillable = ['category_id','title','body','user_id','meta_title', 'meta_description'];
+    protected $fillable = ['category_id','slug','body','user_id','meta_title', 'meta_description'];
 
     protected  $perPage =5;
 
@@ -21,14 +21,38 @@ class Question extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function setTitleAttribute ($value){
 
-        $this->attributes['title']=$value;
-        $this->attributes['slug']=str_slug($value);
+    /**
+     * Boot the model.
+     */
+    protected static function boot()
+    {
+        parent::boot();
 
+        static::created(function ($question) {
+            $question->update(['slug' => $question->body]);
+        });
     }
 
+    /**
+     * Set the proper slug attribute
+     *
+     * @param string $value
+     */
+    public function setSlugAttribute($value)
+    {
+        if (static::whereSlug($slug = str_slug($value))->exists()) {
+            $slug = "{$slug}-{$this->id}";
+        }
+        $this->attributes['slug'] = $slug;
+    }
 
+//    public function setTitleAttribute ($value){
+//
+//        $this->attributes['title']=$value;
+//        $this->attributes['slug']=str_slug($value);
+//
+//    }
 
     public function scopeLatestFirst($query)
     {

@@ -12,7 +12,7 @@
                         <form>
                             <div class="card-body row no-gutters align-items-center">
                                 <div class="col">
-                                    <input  name="term" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+                                    <input  name="term" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords" required>
                                 </div>
                                 <!--end of col-->
                                 <div class="col-auto">

@@ -3,11 +3,11 @@
 
     <div class="login-content">
         <div class="login-logo">
-            <h3>
-                <a href="/questions" class="text-white">
+            <a href="/questions">
+            <h3 class="text-dark">
                 {{--<img class="align-content" src="backend/images/logo.png" alt="">--}}
                 Pride
-                </a></h3>
+               </h3> </a>
             {{--<h5 class="text-uppercase text-center">{{ __('Login') }}</h5>--}}
         </div>
         <div class="login-form">
@@ -47,13 +47,15 @@
 
                 </div>
                 <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">{{ __('Login') }}</button>
+                <br>
                 <div class="social-login-content">
                     <div class="social-button">
-                        <button type="button" class="btn social facebook btn-flat btn-addon mb-3"><i class="ti-facebook"></i>
-                            <a href="{{ url('/login/facebook') }}" class="btn btn-facebook">Sign in with facebook</a></button>
-                        <button type="button" class="btn social twitter btn-flat btn-addon mt-2"><i class="ti-twitter"></i>
-                            <a href="{{ url('/login/twitter') }}" class="btn btn-facebook">Sign in with twitter</a>
-                               </button>
+                        <a href="{{ url('/login/facebook') }}">
+                            <button type="button" class="btn social facebook btn-flat btn-addon mb-3"><i class="ti-facebook"></i>Login with facebook</button>
+                        </a>
+                        {{--<a href="{{ url('/login/twitter') }}">--}}
+                            {{--<button type="button" class="btn social twitter btn-flat btn-addon mt-2"><i class="ti-twitter"></i>Login with twitter</button>--}}
+                        {{--</a>--}}
                     </div>
                 </div>
                 <div class="register-link m-t-15 text-center">

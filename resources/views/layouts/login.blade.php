@@ -4,7 +4,7 @@
     @include('backend_partials._head')
 </head>
 
-<body  class="mh-fullscreen bg-img center-vh " style="background-color:#56B3F9;">
+<body  class="mh-fullscreen bg-img center-vh " style="background-image:url({{url('img/bg.png')}})">
 <!-- Main container -->
 <div class="sufee-login d-flex align-content-center flex-wrap"><div class="container">
     @yield('content')

@@ -19,7 +19,7 @@ class CreateQuestionsTable extends Migration
             $table->foreign('category_id')->references('id')
                 ->on('categories')->onDelete('restrict');
             $table->string('title');
-            $table->string('slug')->unique();
+            $table->string('slug')->nullable();
             $table->string('meta_title')->nullable();
             $table->string('meta_description')->nullable();
             $table->longText('body');

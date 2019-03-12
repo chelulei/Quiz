@@ -10,7 +10,11 @@
                     {{--<a href="/questions">--}}
                         {{--<img class="align-content" src="backend/images/logo.png" alt="">--}}
                     {{--</a>--}}
-                    <h2><a href="/questions" class="text-white">Pride</a></h2>
+                    <a href="/questions" class="text-white">
+                        <h2 class="text-dark">
+                        Pride
+                        </h2>
+                    </a>
                 </div>
                 <div class="login-form">
                     <form class="form-type-material" method="POST" action="{{ route('register') }}">
@@ -55,8 +59,10 @@
                         <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30"> {{ __('Register') }}</button>
                         <div class="social-login-content">
                             <div class="social-button">
-                                <button type="button" class="btn social facebook btn-flat btn-addon mb-3"><i class="ti-facebook"></i>Register with facebook</button>
-                                <button type="button" class="btn social twitter btn-flat btn-addon mt-2"><i class="ti-twitter"></i>Register with twitter</button>
+                                <a href="{{ url('/login/facebook') }}">
+                                    <button type="button" class="btn social facebook btn-flat btn-addon mb-3"><i class="ti-facebook"></i>Register with facebook</button>
+                                </a>
+                                {{--<button type="button" class="btn social twitter btn-flat btn-addon mt-2"><i class="ti-twitter"></i>Register with twitter</button>--}}
                             </div>
                         </div>
                         <div class="register-link m-t-15 text-center">

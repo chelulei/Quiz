@@ -72,13 +72,23 @@ class QuestionController extends Controller
     public function store(Requests\AskQuestionRequest $request)
     {
 
+
         $input = $request->all();
+
+         $id = $request->category_id;
+
+        $title = Category::where('id', '=', $id)
+            ->first(['name']);
+
+        $input['title'] =$title;
+        $input['slug'] = str_limit($request->body, 10);
         $input['meta_title'] = str_limit($request->body, 55);
         $input['meta_description'] = str_limit($request->body, 155);
         $request->user()->questions()->create($input);
 
         flash('Question has been submitted successfully','success');
-        return back();
+
+        return redirect("/questions");
 
     }
 
