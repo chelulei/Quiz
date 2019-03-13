@@ -15,7 +15,7 @@
 {{--<script src="{{asset('js/jquery.nice-select.min.js')}}"></script>--}}
 <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('assets/js/mail-script.js')}}"></script>
-<script src="{{asset('assets/js/main.js')}}"></script>')}}
+<script src="{{asset('assets/js/main.js')}}"></script>
 
 <script>
     $('select').select2({dropdownAutoWidth: true});

@@ -4,106 +4,8 @@
     <list default="true" id="88d9e432-8245-49a9-977d-88b9757c5c20" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AskQuestionRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AskQuestionRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_22_100603_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_22_100603_create_questions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/init-tinymce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/jquery.tinymce.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/langs/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/advlist/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/anchor/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/autolink/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/autoresize/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/autosave/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/bbcode/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/charmap/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/code/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/codesample/css/prism.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/codesample/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/colorpicker/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/contextmenu/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/directionality/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-cool.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-cry.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-embarassed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-frown.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-innocent.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-kiss.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-laughing.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-sealed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-surprised.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-undecided.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-wink.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/img/smiley-yell.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/emoticons/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/example/dialog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/example/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/example_dependency/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/fullpage/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/fullscreen/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/hr/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/image/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/imagetools/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/importcss/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/insertdatetime/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/layer/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/legacyoutput/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/link/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/lists/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/media/moxieplayer.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/media/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/nonbreaking/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/noneditable/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/pagebreak/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/paste/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/preview/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/print/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/save/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/searchreplace/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/spellchecker/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/tabfocus/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/table/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/template/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/textcolor/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/textpattern/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/visualblocks/css/visualblocks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/visualblocks/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/visualchars/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/plugins/wordcount/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/content.inline.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/fonts/tinymce-small.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/fonts/tinymce-small.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/fonts/tinymce-small.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/fonts/tinymce-small.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/fonts/tinymce.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/fonts/tinymce.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/fonts/tinymce.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/fonts/tinymce.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/img/anchor.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/img/loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/img/object.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/img/trans.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/skin.ie7.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/skins/lightgray/skin.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/themes/modern/theme.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/tinymce/tinymce.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/banner.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/modals.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/modals.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/tinymce.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/tinymce.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questions/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questions/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questions/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questions/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/.ebextensions/artisan.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/scripts.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -120,8 +22,8 @@
       <file leaf-file-name="QuestionController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="251">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="e#38#55#0#PHP" expanded="true" />
               </folding>
@@ -129,47 +31,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019_01_22_100603_create_questions_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_22_100603_create_questions_table.php">
+      <file leaf-file-name="SocialController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SocialController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="394">
+              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/questions/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/questions/form.blade.php">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="33" />
+              <caret line="3" column="75" lean-forward="true" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="banner.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/banner.blade.php">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/questions/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="179" selection-start-line="14" selection-start-column="179" selection-end-line="14" selection-end-column="179" />
+            <state relative-caret-position="60">
+              <caret line="12" column="48" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/questions/index.blade.php">
+      <file leaf-file-name="meta_dynamic.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/meta_dynamic.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+            <state relative-caret-position="20">
+              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meta_static.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/meta_static.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoriesTableSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-646">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -177,17 +96,20 @@
       <file leaf-file-name="Question.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Question.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="50" column="2" lean-forward="true" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+            <state relative-caret-position="180">
+              <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AskQuestionRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/AskQuestionRequest.php">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="280">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+              <folding>
+                <element signature="e#466#500#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -290,10 +212,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/views/questions/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/sidebar-left.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/scripts.blade.php" />
         <option value="$PROJECT_DIR$/ebextensions/composer.config" />
         <option value="$PROJECT_DIR$/.ebextensions/npm.config" />
         <option value="$PROJECT_DIR$/.ebextensions/artisan.config" />
@@ -310,9 +230,11 @@
         <option value="$PROJECT_DIR$/resources/views/partials/tinymce.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/AskQuestionRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/banner.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_01_22_100603_create_questions_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/scripts.blade.php" />
         <option value="$PROJECT_DIR$/app/Question.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_01_22_100603_create_questions_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
       </list>
     </option>
   </component>
@@ -439,7 +361,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -451,6 +372,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -565,11 +487,12 @@
       <workItem from="1552295045201" duration="3340000" />
       <workItem from="1552351918382" duration="3194000" />
       <workItem from="1552371471372" duration="13645000" />
+      <workItem from="1552458517187" duration="5969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="487746000" />
+    <option name="totallyTimeSpent" value="493715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,16 +506,16 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8831563" visible="true" weight="0.2185501" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8831563" visible="true" weight="0.19669509" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32928678" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" sideWeight="0.1168437" side_tool="true" weight="0.16489361" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3583934" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.11637487" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -623,11 +546,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -672,27 +590,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/cache/config.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/meta_dynamic.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/questions/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -718,13 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -768,13 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
           <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/scripts.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -826,30 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SocialController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/modals.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -857,20 +716,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/vendor/tinymce/init-tinymce.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="159" lean-forward="true" selection-start-line="23" selection-start-column="159" selection-end-line="23" selection-end-column="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/vendor/tinymce/init-tinymce.js" />
     <entry file="file://$PROJECT_DIR$/resources/views/partials/tinymce.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -892,12 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/questions/script.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/questions/alert.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/banner.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -908,28 +748,21 @@
     <entry file="file://$PROJECT_DIR$/resources/views/questions/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
-          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/AskQuestionRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="50" column="2" lean-forward="true" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/questions/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
-          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -940,20 +773,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_22_100603_create_questions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/scripts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/CategoryFactory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="e#466#500#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/questions/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/meta_dynamic.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/meta_static.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="251">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="e#38#55#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_22_100603_create_questions_table.php">
+    <entry file="file://$PROJECT_DIR$/public/web.config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SocialController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="394">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="75" lean-forward="true" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
         </state>
       </provider>
     </entry>

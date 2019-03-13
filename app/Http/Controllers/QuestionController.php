@@ -78,9 +78,8 @@ class QuestionController extends Controller
          $id = $request->category_id;
 
         $title = Category::where('id', '=', $id)
-            ->first(['name']);
-
-        $input['title'] =$title;
+            ->first(['title']);
+        $input['title'] = $title->title;
         $input['slug'] = str_limit($request->body, 10);
         $input['meta_title'] = str_limit($request->body, 55);
         $input['meta_description'] = str_limit($request->body, 155);

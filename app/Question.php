@@ -9,7 +9,7 @@ class Question extends Model
     //
     use VotableTrait;
 
-    protected $fillable = ['category_id','slug','body','user_id','meta_title', 'meta_description'];
+    protected $fillable = ['category_id','title','slug','body','user_id','meta_title', 'meta_description'];
 
     protected  $perPage =5;
 
@@ -30,7 +30,7 @@ class Question extends Model
         parent::boot();
 
         static::created(function ($question) {
-            $question->update(['slug' => $question->body]);
+            $question->update(['slug' => $question->title]);
         });
     }
 
